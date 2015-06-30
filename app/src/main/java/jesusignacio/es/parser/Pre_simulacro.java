@@ -3,6 +3,7 @@ package jesusignacio.es.parser;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.PaintDrawable;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
@@ -35,6 +36,7 @@ public class Pre_simulacro extends AppCompatActivity {
     private Toolbar toolbar;
     private ImageButton button;
     public int documentoxml;
+    public String intent_asignatura;
     private XmlPullParserFactory xmlFactoryObject;
     public volatile boolean parsingComplete = true;
 
@@ -48,9 +50,12 @@ public class Pre_simulacro extends AppCompatActivity {
 
         Intent myIntent = getIntent(); // gets the previously created intent
         int intent_id = myIntent.getIntExtra("id", 0); // here 0 is the default value
-        String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
+        final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
 
         toolbar.setTitle(intent_asignatura);
+
+        //Crear el Floating Action Button
+
         ActionButton actionButton = (ActionButton) findViewById(R.id.pre_simulacro_action_button);
 
         actionButton.setOnTouchListener(new ActionButton.OnTouchListener() {
@@ -61,6 +66,10 @@ public class Pre_simulacro extends AppCompatActivity {
                 // have same code as onTouchEvent() (for the Activity) above
                 try {
                     readXML();
+
+                    Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
+                    startActivity(myIntent);
+
                 }
                 catch (XmlPullParserException e) {
                     e.printStackTrace();
@@ -370,7 +379,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
                             //int code = Integer.parseInt(text);
                             bloque = new String[8]; // create a new array
-                            //Log.i("EIR-App, Code", Integer.toString(code));
+
                             bloque[0] = text;
 
 
@@ -378,7 +387,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
                         else if (name.equals("enunciado")) {
 
-                            Log.i("EIR-App", text);
+
                             bloque[1] = text;
 
                         }
@@ -386,43 +395,41 @@ public class Pre_simulacro extends AppCompatActivity {
                         else if (name.equals("opcion")) {
 
                             if (i_respuesta == 0) {
-                                Log.i("EIR-App, Opcion 1:", text + Integer.toString(i_respuesta));
+
                                 bloque[2] = text;
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 1) {
-                                Log.i("EIR-App, Opcion 2:", text + Integer.toString(i_respuesta));
+
                                 bloque[3] = text;
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 2) {
-                                Log.i("EIR-App, Opcion 3:", text + Integer.toString(i_respuesta));
+
                                 bloque[4] = text;
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 3) {
-                                Log.i("EIR-App, Opcion 4:", text + Integer.toString(i_respuesta));
+
                                 bloque[5] = text;
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 4) {
-                                Log.i("EIR-App, Opcion 5:", text + Integer.toString(i_respuesta));
+
                                 bloque[6] = text;
                                 i_respuesta = 0;
                             }
                         }
                         else if (name.equals("respuesta")) {
                             int respuesta = Integer.parseInt(text);;
-                            Log.i("EIR-App, Respuesta:", Integer.toString(respuesta));
+
                             bloque[7] = text;
                             //Añadir bloque a simulacro:
                             simulacro.add(bloque);
-                            Log.i("EIR-App, simulacro.size", Integer.toString(simulacro.size()));
-
 
                         }
                         break;
@@ -430,6 +437,7 @@ public class Pre_simulacro extends AppCompatActivity {
                 event = parser.next();
             }
             parsingComplete = false;
+
 
         } catch (Exception e) {
             e.printStackTrace();

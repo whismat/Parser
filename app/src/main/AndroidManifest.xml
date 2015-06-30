@@ -16,9 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Pre_simulacro"
-            >
-        </activity>
+        <activity android:name=".Pre_simulacro"></activity>
+        <activity android:name=".Simulacro_1"></activity>
     </application>
 
 </manifest>
