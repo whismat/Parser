@@ -10,6 +10,7 @@
             android:id="@+id/toolbar_main"
             layout="@layout/toolbar">
         </include>
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -21,19 +22,23 @@
                 android:background="@drawable/toolbar_shadow" />
         </FrameLayout>
 
-    <ImageView
+        <!--ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_pre_simulacro_image"
+            android:src="@drawable/exam" /-->
+    <LinearLayout
+        
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/layout_pre_simulacro_image"
-        android:src="@drawable/exam"
-        />
+        android:layout_height="fill_parent"
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="EMPEZAR"
-        />
-
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Empezar" />
+</LinearLayout>
 </LinearLayout>
 

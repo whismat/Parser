@@ -30,7 +30,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
 
         Intent myIntent = getIntent(); // gets the previously created intent
-        String intent_id = myIntent.getStringExtra("id"); // will return "FirstKeyValue"
+        int intent_id = myIntent.getIntExtra("id", 0); // here 0 is the default value
         String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
 
         toolbar.setTitle(intent_asignatura);
