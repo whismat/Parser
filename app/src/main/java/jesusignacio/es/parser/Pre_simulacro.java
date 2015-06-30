@@ -27,20 +27,98 @@ public class Pre_simulacro extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
 
-
-
         Intent myIntent = getIntent(); // gets the previously created intent
         int intent_id = myIntent.getIntExtra("id", 0); // here 0 is the default value
         String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
 
         toolbar.setTitle(intent_asignatura);
-        toolbar.setBackgroundColor(Color.RED);
 
+        intent_id++;
+        if (intent_id == 1) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
+        }
+        else if (intent_id == 2) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_2));
+        }
+        else if (intent_id == 3) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_3));
+        }
+        else if (intent_id == 4) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_4));
+        }
+        else if (intent_id == 5) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_5));
+        }
+        else if (intent_id == 6) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_6));
+        }
+        else if (intent_id == 7) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_7));
+        }
+        else if (intent_id == 8) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_8));
+        }
+        else if (intent_id == 9) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_9));
+        }
+        else if (intent_id == 10) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_10));
+        }
+        else if (intent_id == 11) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_11));
+        }
+        else if (intent_id == 12) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_12));
+        }
+        else if (intent_id == 13) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_13));
+        }
+        else if (intent_id == 14) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_14));
+        }
+        else if (intent_id == 15) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_15));
+        }
+        else if (intent_id == 16) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_16));
+        }
+        else if (intent_id == 17) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_17));
+        }
+        else if (intent_id == 18) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_18));
+        }
+        else if (intent_id == 19) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_19));
+        }
+        else if (intent_id == 20) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_20));
+        }
+        else if (intent_id == 21) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_21));
+        }
+        else if (intent_id == 22) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_22));
+        }
+        else if (intent_id == 23) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_23));
+        }
+        else if (intent_id == 24) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_24));
+        }
+        else if (intent_id == 25) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_25));
+        }
+        else if (intent_id == 26) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_26));
+        }
+        else if (intent_id == 27) {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_27));
+        }
         setSupportActionBar(toolbar);
 
         // this method show home button in toolbar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
