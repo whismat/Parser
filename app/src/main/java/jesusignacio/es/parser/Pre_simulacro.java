@@ -1,8 +1,11 @@
 package jesusignacio.es.parser;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.support.v4.content.IntentCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -23,21 +26,8 @@ public class Pre_simulacro extends AppCompatActivity {
         setContentView(R.layout.layout_pre_simulacro);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
-        setSupportActionBar(toolbar);
-
-        // this method show home button in toolbar
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-        // this method handle what happen when you click at home
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-                
-                }
-
-        });
 
         Intent myIntent = getIntent(); // gets the previously created intent
         String intent_id = myIntent.getStringExtra("id"); // will return "FirstKeyValue"
@@ -47,6 +37,17 @@ public class Pre_simulacro extends AppCompatActivity {
         toolbar.setBackgroundColor(Color.RED);
 
         setSupportActionBar(toolbar);
+
+        // this method show home button in toolbar
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavUtils.navigateUpTo(Pre_simulacro.this, IntentCompat.makeMainActivity(new ComponentName(Pre_simulacro.this, Pre_simulacro.class)));
+            }
+        });
 
 
     }
