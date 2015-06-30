@@ -50,13 +50,12 @@ public class Pre_simulacro extends AppCompatActivity {
 
                 // have same code as onTouchEvent() (for the Activity) above
 
-                int action = event.getActionMasked();
-
-                Toast.makeText(Pre_simulacro.this, "Hola caracola", Toast.LENGTH_SHORT).show();;
+                NavUtils.navigateUpTo(Pre_simulacro.this, IntentCompat.makeMainActivity(new ComponentName(Pre_simulacro.this, Pre_simulacro.class)));
+                ;
 
                 return true;
-                }
-            });
+            }
+        });
 
             actionButton.setRippleEffectEnabled(true);
 
