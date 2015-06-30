@@ -1,6 +1,7 @@
 package jesusignacio.es.parser;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -20,13 +21,15 @@ public class Pre_simulacro extends AppCompatActivity {
         setContentView(R.layout.layout_pre_simulacro);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
-        setSupportActionBar(toolbar);
+
 
         Intent myIntent = getIntent(); // gets the previously created intent
         String intent_id = myIntent.getStringExtra("id"); // will return "FirstKeyValue"
         String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
 
         toolbar.setTitle(intent_asignatura);
+        toolbar.setBackgroundColor(Color.RED);
+        setSupportActionBar(toolbar);
 
     }
     @Override

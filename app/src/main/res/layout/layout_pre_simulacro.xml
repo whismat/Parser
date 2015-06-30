@@ -10,5 +10,11 @@
             layout="@layout/toolbar">
         </include>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_pre_simulacro_text"
+        />
+
 </LinearLayout>
 
