@@ -34,7 +34,7 @@ public class Main extends AppCompatActivity {
         asignaturas = getResources().getStringArray(R.array.asignaturas);
         mDrawerLayout_main = (DrawerLayout) findViewById(R.id.drawer_layout_main);
         mDrawerList_main = (ListView) findViewById(R.id.left_listview_main);
-        mDrawerList_main.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, asignaturas));
+        mDrawerList_main.setAdapter(new ArrayAdapter<String>(this,R.layout.item_list_layout, asignaturas));
 
 
         mDrawerToggle_main = new ActionBarDrawerToggle(this,
