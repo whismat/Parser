@@ -1,11 +1,41 @@
 <resources>
-    <string name="app_name">Parser</string>
+    <string name="app_name">EIR-App</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Ajustes</string>
 
     <string name="drawer_open">Navigation Abierta</string>
     <string name="drawer_close">Navigation Cerrada</string>
+
+    <string-array name="asignaturas">
+        <item>Anatomofisiología</item>
+        <item>Bioética y legislación</item>
+        <item>Bioquímica</item>
+        <item>Enfermería del trabajo</item>
+        <item>Geriatría</item>
+        <item>Enfermería maternal</item>
+        <item>Enfermería pediátrica</item>
+        <item>Administración</item>
+        <item>Nutrición y dietética</item>
+        <item>Aparato respiratorio</item>
+        <item>Equilibrio hidroelectrolítico</item>
+        <item>Endocrinología y metabolismo</item>
+        <item>Nefrología y urología</item>
+        <item>Sistema digestivo</item>
+        <item>Sistema musculoesquelético</item>
+        <item>Sistema neurosensorial</item>
+        <item>Oncohematología</item>
+        <item>Piel</item>
+        <item>Sistema cardiovascular</item>
+        <item>Enfermería psiquiátrica</item>
+        <item>Enfermería psicosocial</item>
+        <item>Farmacología</item>
+        <item>Historia de la enfermería</item>
+        <item>Fundamentos de enfermería</item>
+        <item>Proceso asistencial de enfermería</item>
+        <item>Procedimientos y técnicas</item>
+        <item>Salud pública y comunitaria</item>
+    </string-array>
 
     <string-array name="countries">
         <item>Pregunta 1</item>
