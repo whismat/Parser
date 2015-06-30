@@ -13,7 +13,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar_main">
 
             <View
@@ -22,11 +22,11 @@
                 android:background="@drawable/toolbar_shadow" />
         </FrameLayout>
 
-        <!--ImageView
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/layout_pre_simulacro_image"
-            android:src="@drawable/exam" /-->
+            android:src="@drawable/exam" />
 
     <LinearLayout
 
