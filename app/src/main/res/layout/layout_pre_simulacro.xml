@@ -1,7 +1,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
 
     <include
@@ -21,14 +22,29 @@
 
     </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/toolbar_main"
+        >
+
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/layout_pre_simulacro_image"
-            android:adjustViewBounds="true"
-            android:src="@drawable/img21"
-            android:layout_below="@id/toolbar_main"
-            />
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/layout_pre_simulacro_image"
+
+
+        android:src="@drawable/img21"
+
+        />
+
+    <View
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"/>
+
+    </FrameLayout>
+
 
 </RelativeLayout>
 
