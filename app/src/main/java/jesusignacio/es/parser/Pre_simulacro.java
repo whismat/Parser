@@ -21,12 +21,22 @@ import android.widget.Toast;
 
 import com.software.shell.fab.ActionButton;
 
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.InputStream;
+import java.util.ArrayList;
+
 /**
  * Created by jesusignacio on 30/06/15.
  */
 public class Pre_simulacro extends AppCompatActivity {
     private Toolbar toolbar;
     private ImageButton button;
+    public int documentoxml;
+    private XmlPullParserFactory xmlFactoryObject;
+    public volatile boolean parsingComplete = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +59,12 @@ public class Pre_simulacro extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
 
                 // have same code as onTouchEvent() (for the Activity) above
-
-                NavUtils.navigateUpTo(Pre_simulacro.this, IntentCompat.makeMainActivity(new ComponentName(Pre_simulacro.this, Pre_simulacro.class)));
-                ;
+                try {
+                    readXML();
+                }
+                catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                }
 
                 return true;
             }
@@ -67,6 +80,7 @@ public class Pre_simulacro extends AppCompatActivity {
                 toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
                 actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1));
                 actionButton.setButtonColor(getResources().getColor(R.color.color_1));
+                int documentoxml = R.raw.examen1;
             }
 
             else if(intent_id==2)
@@ -280,10 +294,7 @@ public class Pre_simulacro extends AppCompatActivity {
             setSupportActionBar(toolbar);
 
             // this method show home button in toolbar
-            getSupportActionBar()
-
-            .
-
+            getSupportActionBar().
             setDisplayHomeAsUpEnabled(true);
 
             toolbar.setNavigationOnClickListener(new View.OnClickListener()
@@ -297,10 +308,155 @@ public class Pre_simulacro extends AppCompatActivity {
 
             );
 
+    }
+
+    private void readXML() throws XmlPullParserException {
+
+
+        InputStream inputstream = null;
+        try {
+
+            inputstream = getResources().openRawResource(R.raw.examen1);
+
+            xmlFactoryObject = XmlPullParserFactory.newInstance();
+            XmlPullParser parser = xmlFactoryObject.newPullParser();
+            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+
+            parser.setInput(inputstream, null);
+            Log.i("EIR-App", "Cargado XML");
+            parseXML(parser);
+        }
+        catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void parseXML(XmlPullParser parser) {
+        int event;
+        String text = null;
+        String enunciado = null, opcion1 = null, opcion2 = null, opcion3 = null, opcion4 = null, opcion5 = null;
+        int i_bloque = 0;
+        int i_respuesta = 0;
+
+        //Crear ArrayList simulacro
+        //Crear ArrayList bloque, que serán los nodos del ArrayList simulacro
+        //Posiciones:
+        // 0 = enunciado, 1 = code, 2 = respuesta, 3 = ArrayList de Opciones
+
+
+
+        ArrayList<String[]> simulacro = new ArrayList<String[]>();
+        String[] bloque = new String[8];
+
+
+        try {
+            event = parser.getEventType();
+
+            while (event != XmlPullParser.END_DOCUMENT) {
+                String name = parser.getName();
+
+                switch (event) {
+
+                    case XmlPullParser.START_TAG:
+                        break;
+
+                    case XmlPullParser.TEXT:
+                        text = parser.getText();
+                        break;
+
+                    case XmlPullParser.END_TAG:
+
+                        if (name.equals("code")) {
+
+                            //int code = Integer.parseInt(text);
+                            bloque = new String[8]; // create a new array
+                            //Log.i("EIR-App, Code", Integer.toString(code));
+                            bloque[0] = text;
+
+
+                        }
+
+                        else if (name.equals("enunciado")) {
+
+                            Log.i("EIR-App", text);
+                            bloque[1] = text;
+
+                        }
+
+                        else if (name.equals("opcion")) {
+
+                            if (i_respuesta == 0) {
+                                Log.i("EIR-App, Opcion 1:", text + Integer.toString(i_respuesta));
+                                bloque[2] = text;
+                                i_respuesta++;
+
+                            }
+                            else if (i_respuesta == 1) {
+                                Log.i("EIR-App, Opcion 2:", text + Integer.toString(i_respuesta));
+                                bloque[3] = text;
+                                i_respuesta++;
+
+                            }
+                            else if (i_respuesta == 2) {
+                                Log.i("EIR-App, Opcion 3:", text + Integer.toString(i_respuesta));
+                                bloque[4] = text;
+                                i_respuesta++;
+
+                            }
+                            else if (i_respuesta == 3) {
+                                Log.i("EIR-App, Opcion 4:", text + Integer.toString(i_respuesta));
+                                bloque[5] = text;
+                                i_respuesta++;
+
+                            }
+                            else if (i_respuesta == 4) {
+                                Log.i("EIR-App, Opcion 5:", text + Integer.toString(i_respuesta));
+                                bloque[6] = text;
+                                i_respuesta = 0;
+                            }
+                        }
+                        else if (name.equals("respuesta")) {
+                            int respuesta = Integer.parseInt(text);;
+                            Log.i("EIR-App, Respuesta:", Integer.toString(respuesta));
+                            bloque[7] = text;
+                            //Añadir bloque a simulacro:
+                            simulacro.add(bloque);
+                            Log.i("EIR-App, simulacro.size", Integer.toString(simulacro.size()));
+
+
+                        }
+                        break;
+                }
+                event = parser.next();
+            }
+            parsingComplete = false;
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
+        //PRUEBAS PARA OBTENER LOS STRINGS A PARTIR DEL ARRAYLIST
 
-        @Override
+        /*TextView txt_enunciado = (TextView) findViewById(R.id.show_enunciado);
+
+        String[] prueba1 = simulacro.get(630);
+        String prueba2 = prueba1[1];
+        Log.i("EIR-App, Respuesta:", prueba1[1]);
+        txt_enunciado.setText(prueba2);
+
+
+
+        TextView txt_opcion1 = (TextView) findViewById(R.id.show_opcion1);
+        TextView txt_opcion2 = (TextView) findViewById(R.id.show_opcion2);
+        TextView txt_opcion3 = (TextView) findViewById(R.id.show_opcion3);
+        TextView txt_opcion4 = (TextView) findViewById(R.id.show_opcion4);
+        TextView txt_opcion5 = (TextView) findViewById(R.id.show_opcion5);*/
+
+
+    }
+
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);

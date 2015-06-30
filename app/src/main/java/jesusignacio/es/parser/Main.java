@@ -68,10 +68,6 @@ public class Main extends AppCompatActivity {
 
                 // We know the View is a TextView so we can cast it
                 TextView clickedView = (TextView) view;
-
-
-                Toast.makeText(Main.this, "Id ["+id+"] - Asignatura ["+clickedView.getText()+"]", Toast.LENGTH_SHORT).show();
-
                 Intent myIntent = new Intent(Main.this, Pre_simulacro.class);
                 Integer id_intent = (int) (long) id;
                 myIntent.putExtra("id", id_intent);
