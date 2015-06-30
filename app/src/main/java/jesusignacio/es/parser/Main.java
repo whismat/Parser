@@ -69,7 +69,7 @@ public class Main extends AppCompatActivity {
                 // We know the View is a TextView so we can cast it
                 TextView clickedView = (TextView) view;
 
-                Toast.makeText(Main.this, "Item with id ["+id+"] - Position ["+position+"] - Planet ["+clickedView.getText()+"]", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Main.this, "Id ["+id+"] - Asignatura ["+clickedView.getText()+"]", Toast.LENGTH_SHORT).show();
 
             }
         });
