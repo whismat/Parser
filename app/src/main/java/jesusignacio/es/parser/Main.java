@@ -1,5 +1,6 @@
 package jesusignacio.es.parser;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -65,12 +66,17 @@ public class Main extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parentAdapter, View view, int position,
                                     long id) {
 
-
                 // We know the View is a TextView so we can cast it
                 TextView clickedView = (TextView) view;
 
+
                 Toast.makeText(Main.this, "Id ["+id+"] - Asignatura ["+clickedView.getText()+"]", Toast.LENGTH_SHORT).show();
 
+                Intent myIntent = new Intent(Main.this, Pre_simulacro.class);
+                myIntent.putExtra("id", id);
+                myIntent.putExtra("asignatura", clickedView.getText());
+
+                startActivity(myIntent);
             }
         });
 
