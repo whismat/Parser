@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 /**
  * Created by jesusignacio on 30/06/15.
@@ -23,17 +24,19 @@ public class Pre_simulacro extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
+
         // this method show home button in toolbar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        // this method enable home to be clicked
-        getSupportActionBar().setHomeButtonEnabled(true);
+
+
         // this method handle what happen when you click at home
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
-                finish();
-            }
+                
+                }
+
         });
 
         Intent myIntent = getIntent(); // gets the previously created intent
