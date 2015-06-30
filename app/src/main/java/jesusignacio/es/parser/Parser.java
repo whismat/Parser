@@ -223,18 +223,9 @@ public class Parser extends AppCompatActivity {
 
 
         TextView txt_opcion1 = (TextView) findViewById(R.id.show_opcion1);
-
-
-
         TextView txt_opcion2 = (TextView) findViewById(R.id.show_opcion2);
-
-
         TextView txt_opcion3 = (TextView) findViewById(R.id.show_opcion3);
-
-
         TextView txt_opcion4 = (TextView) findViewById(R.id.show_opcion4);
-
-
         TextView txt_opcion5 = (TextView) findViewById(R.id.show_opcion5);
 
 

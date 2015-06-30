@@ -1,48 +1,33 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    android:id="@+id/layout_pre_simulacro"
-    android:orientation="vertical"
-    >
+    android:layout_height="match_parent" >
 
-        <include
-            android:id="@+id/toolbar_main"
-            layout="@layout/toolbar">
-        </include>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/toolbar_main">
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar">
+    </include>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="5dp"
-                android:background="@drawable/toolbar_shadow" />
-        </FrameLayout>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/layout_pre_simulacro_image"
-            android:src="@drawable/exam" />
-
-    <LinearLayout
-
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_main">
 
-        android:orientation="vertical"
-        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_shadow" />
 
-        <Button
+    </FrameLayout>
+
+    <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Empezar" />
+            android:id="@+id/layout_pre_simulacro_image"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img21"
+            />
 
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
 
