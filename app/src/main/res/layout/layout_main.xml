@@ -38,7 +38,7 @@
 
     <!--NavigationDrawer-->
     <LinearLayout
-        android:layout_width="240dp"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:orientation="vertical"
@@ -47,7 +47,7 @@
 
         <ListView
             android:id="@+id/left_listview_main"
-            android:layout_width="240dp"
+            android:layout_width="300dp"
             android:layout_height="match_parent"
             android:choiceMode="singleChoice"
             android:background="#fff"

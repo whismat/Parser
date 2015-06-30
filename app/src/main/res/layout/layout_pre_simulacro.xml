@@ -1,5 +1,5 @@
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
@@ -22,29 +22,48 @@
 
     </FrameLayout>
 
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@id/toolbar_main"
+
         >
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:id="@+id/layout_pre_simulacro_image"
-
-
+        android:scaleType="fitStart"
         android:src="@drawable/img21"
 
         />
 
-    <View
+
+
+
+        </RelativeLayout>
+
+    <!--Button
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:background="@drawable/gradient"/>
+        android:layout_width="wrap_content"
+        android:text="Empezar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
 
-    </FrameLayout>
+        /-->
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/pre_simulacro_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        fab:image="@drawable/plus"
 
+        />
 
 </RelativeLayout>
 
