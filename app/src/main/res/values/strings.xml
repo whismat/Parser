@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Parser</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="drawer_open">Navigation Abierta</string>
+    <string name="drawer_close">Navigation Cerrada</string>
+
+    <string-array name="countries">
+        <item>Pregunta 1</item>
+        <item>Pregunta 2</item>
+        <item>Pregunta 3</item>
+        <item>Pregunta 4</item>
+        <item>Pregunta 5</item>
+        <item>Pregunta 6</item>
+        <item>Pregunta 7</item>
+        <item>Pregunta 8</item>
+        <item>Pregunta 9</item>
+        <item>Pregunta 10</item>
+        <item>Pregunta 11</item>
+        <item>Pregunta 12</item>
+        <item>Pregunta 13</item>
+        <item>Pregunta 14</item>
+        <item>Pregunta 15</item>
+        <item>Pregunta 16</item>
+        <item>Pregunta 17</item>
+        <item>Pregunta 18</item>
+        <item>Pregunta 19</item>
+        <item>Pregunta 20</item>
+    </string-array>
+
+    <string name="enunciado">Enunciado</string>
+
+</resources>
+

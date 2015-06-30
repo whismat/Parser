@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<examen>
+	<pregunta code="5698">
+      		<enunciado>¿Cual de los siguientes pares de bases NO forma parte de la molécula de ADN?</enunciado>
+    		<opcion_1>Guanina-citosina </opcion>
+      		<opcion_2>Adenina-timina </opcion>
+      		<opcion_3>Adenina-uracilo</opcion>
+      		<opcion_4>Timina-Adenina</opcion>
+      		<opcion_5>Citosina-Guanina</opcion>
+      		<respuesta>3</respuesta>
+	</pregunta>
+	<pregunta code="5699">
+      		<enunciado>Uno de los siguiente orgánulos celulares genera ATP mediante procesos de respiración aeróbica:</enunciado>
+      		<opcion_1>Aparato de Golgi</opcion>
+      		<opcion_2>Lisosomas</opcion>
+      		<opcion_3>Ribosomas </opcion>
+      		<opcion_4>Mitocondrias </opcion>
+      		<opcion_5>Peroxisomas</opcion>
+      		<respuesta>4</respuesta>
+	</pregunta>
+	<pregunta code="5700">
+      		<enunciado>La etapa del proceso de mitosis en que las dos cromátides a polos opuestos del núcleo duplicando con ellos el número de cromosomas es la: </enunciado>
+      		<opcion_1>Profase </opcion>
+      		<opcion_2>Metafase</opcion>
+      		<opcion_3>Anafase </opcion>
+      		<opcion_4>Telofase </opcion>
+      		<opcion_5>Interfase</opcion>
+      		<respuesta>3</respuesta>
+	</pregunta>
+</examen>
