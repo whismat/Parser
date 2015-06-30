@@ -8,8 +8,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class Main extends AppCompatActivity {
@@ -57,6 +60,21 @@ public class Main extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         mDrawerToggle_main.syncState();
 
+        mDrawerList_main.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            public void onItemClick(AdapterView<?> parentAdapter, View view, int position,
+                                    long id) {
+
+
+                // We know the View is a TextView so we can cast it
+                TextView clickedView = (TextView) view;
+
+                Toast.makeText(Main.this, "Item with id ["+id+"] - Position ["+position+"] - Planet ["+clickedView.getText()+"]", Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
     }
 
     @Override
@@ -80,4 +98,7 @@ public class Main extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
