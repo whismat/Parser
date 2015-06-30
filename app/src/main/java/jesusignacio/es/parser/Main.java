@@ -73,6 +73,7 @@ public class Main extends AppCompatActivity {
                 Toast.makeText(Main.this, "Id ["+id+"] - Asignatura ["+clickedView.getText()+"]", Toast.LENGTH_SHORT).show();
 
                 Intent myIntent = new Intent(Main.this, Pre_simulacro.class);
+
                 myIntent.putExtra("id", id);
                 myIntent.putExtra("asignatura", clickedView.getText());
 
