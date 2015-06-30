@@ -1,23 +1,23 @@
 <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+    android:id="@+id/drawer_layout_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity"
     >
 
     <RelativeLayout
-        android:id="@+id/content"
+        android:id="@+id/content_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <include
-            android:id="@+id/toolbar"
+            android:id="@+id/toolbar_main"
             layout="@layout/toolbar">
         </include>
 
 
         <FrameLayout
-            android:id="@+id/fragment_container_base"
+            android:id="@+id/fragment_container_base_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/toolbar">
@@ -35,7 +35,7 @@
         android:background="#FFFFFF">
 
         <ListView
-            android:id="@+id/left_listview"
+            android:id="@+id/left_listview_main"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:choiceMode="singleChoice"

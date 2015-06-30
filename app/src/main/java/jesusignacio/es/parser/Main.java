@@ -15,30 +15,30 @@ import android.widget.ListView;
 public class Main extends AppCompatActivity {
 
     private String[] asignaturas;
-    private ActionBarDrawerToggle mDrawerToggle;
-    private DrawerLayout mDrawerLayout;
-    private ListView mDrawerList;
+    private ActionBarDrawerToggle mDrawerToggle_main;
+    private DrawerLayout mDrawerLayout_main;
+    private ListView mDrawerList_main;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.layout_main);
+        setContentView(R.layout.layout_main);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////
         //Añado el Drawer Layout
         asignaturas = getResources().getStringArray(R.array.asignaturas);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList = (ListView) findViewById(R.id.left_listview);
-        mDrawerList.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, asignaturas));
+        mDrawerLayout_main = (DrawerLayout) findViewById(R.id.drawer_layout_main);
+        mDrawerList_main = (ListView) findViewById(R.id.left_listview_main);
+        mDrawerList_main.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, asignaturas));
 
 
-        mDrawerToggle = new ActionBarDrawerToggle(this,
-                mDrawerLayout,
+        mDrawerToggle_main = new ActionBarDrawerToggle(this,
+                mDrawerLayout_main,
                 toolbar,
                 R.string.drawer_open,
                 R.string.drawer_close) {
@@ -52,10 +52,10 @@ public class Main extends AppCompatActivity {
             }
         };
 
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout_main.setDrawerListener(mDrawerToggle_main);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
-        mDrawerToggle.syncState();
+        mDrawerToggle_main.syncState();
 
     }
 
