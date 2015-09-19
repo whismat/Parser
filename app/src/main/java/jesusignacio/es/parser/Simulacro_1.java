@@ -10,6 +10,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * Created by jesusignacio on 30/06/15.
@@ -28,6 +31,7 @@ public class Simulacro_1 extends AppCompatActivity {
         final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
         final int intent_id = myIntent.getIntExtra("intent_id", 0); // here 0 is the default value
 
+        ArrayList<String> simulacro = myIntent.getStringArrayListExtra("string_array"); //Capturar el ArrayList simulacro
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
@@ -221,20 +225,28 @@ public class Simulacro_1 extends AppCompatActivity {
 
         }
 
-
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                 NavUtils.navigateUpTo(Simulacro_1.this, IntentCompat.makeMainActivity(new ComponentName(Simulacro_1.this, Simulacro_1.class)));
-                 }
-            }
+                                                 @Override
+                                                 public void onClick(View view) {
+                                                     NavUtils.navigateUpTo(Simulacro_1.this, IntentCompat.makeMainActivity(new ComponentName(Simulacro_1.this, Simulacro_1.class)));
+                                                 }
+                                             }
 
         );
+
+        //Cambiar el texto de enunciado con el valor 0
+        TextView txtCambiado = (TextView)findViewById(R.id.show_enunciado);
+
+        ArrayList<String> pregunta = new ArrayList<String>();
+
+        //pregunta.add(simulacro.get(0));
+
+        //txtCambiado.setText(pregunta.get(0));
 
     }
     @Override

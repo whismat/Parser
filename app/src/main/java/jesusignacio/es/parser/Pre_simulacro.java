@@ -41,6 +41,7 @@ public class Pre_simulacro extends AppCompatActivity {
     public String intent_asignatura;
     private XmlPullParserFactory xmlFactoryObject;
     public volatile boolean parsingComplete = true;
+    final ArrayList<String[]> simulacro = new ArrayList<String[]>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -289,6 +290,7 @@ public class Pre_simulacro extends AppCompatActivity {
                     Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
                     myIntent.putExtra("asignatura", intent_asignatura);
                     myIntent.putExtra("intent_id", intent_id);
+                    myIntent.putExtra("simulacro", simulacro);
                     startActivity(myIntent);
 
                 } catch (XmlPullParserException e) {
@@ -336,7 +338,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
 
 
-        ArrayList<String[]> simulacro = new ArrayList<String[]>();
+
         String[] bloque = new String[8];
 
 
