@@ -29,7 +29,7 @@
             android:id="@+id/show_enunciado"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:background="@color/ColorPrimaryDark"
+
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
             android:textSize="18sp"

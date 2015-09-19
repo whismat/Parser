@@ -1,5 +1,6 @@
 package jesusignacio.es.parser;
 
+import android.app.Notification;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.graphics.Color;
@@ -36,6 +37,7 @@ public class Pre_simulacro extends AppCompatActivity {
     private Toolbar toolbar;
     private ImageButton button;
     public int documentoxml;
+    public int color_asignatura;
     public String intent_asignatura;
     private XmlPullParserFactory xmlFactoryObject;
     public volatile boolean parsingComplete = true;
@@ -44,278 +46,256 @@ public class Pre_simulacro extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+        //Elegir el layourt del contenido
         setContentView(R.layout.layout_pre_simulacro);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar_main);
-
+        //Capturar las variables del intent
         Intent myIntent = getIntent(); // gets the previously created intent
-        int intent_id = myIntent.getIntExtra("id", 0); // here 0 is the default value
+        final int intent_id = myIntent.getIntExtra("id", 0) + 1; // Le sumo 1 porque el primer elemento de la lista devuelve 0, y no 1
         final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
 
+        //Crear y cambiar el título a la Toolbar
+        toolbar = (Toolbar) findViewById(R.id.toolbar_main);
+
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().
+                setDisplayHomeAsUpEnabled(true);
+
+        //Listener para volver atrás
+        toolbar.setNavigationOnClickListener(new View.OnClickListener()
+
+                                             {
+                                                 @Override
+                                                 public void onClick(View view) {
+                                                     NavUtils.navigateUpTo(Pre_simulacro.this, IntentCompat.makeMainActivity(new ComponentName(Pre_simulacro.this, Pre_simulacro.class)));
+                                                 }
+                                             }
+
+        );
+
+        //Cambiar el título
         toolbar.setTitle(intent_asignatura);
 
         //Crear el Floating Action Button
-
         ActionButton actionButton = (ActionButton) findViewById(R.id.pre_simulacro_action_button);
+        actionButton.setRippleEffectEnabled(false);
 
-        actionButton.setOnTouchListener(new ActionButton.OnTouchListener() {
 
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
+        //Le cambio el color a la ActionBar y al ActionButton
 
-                // have same code as onTouchEvent() (for the Activity) above
+        if(intent_id==1)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_1));
+            int documentoxml = R.raw.examen1;
+        }
+
+        else if(intent_id==2)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_2));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_2));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_2));
+        }
+
+        else if(intent_id==3)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_3));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_3));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_3));
+        }
+
+        else if(intent_id==4)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_4));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_4));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_4));
+        }
+
+        else if(intent_id==5)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_5));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_5));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_5));
+        }
+
+        else if(intent_id==6)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_6));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_6));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_6));
+        }
+
+        else if(intent_id==7)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_7));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_7));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_7));
+        }
+
+        else if(intent_id==8)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_8));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_8));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_8));
+        }
+
+        else if(intent_id==9)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_9));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_9));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_9));
+        }
+
+        else if(intent_id==10)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_10));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_10));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_10));
+        }
+
+        else if(intent_id==11)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_11));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_11));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_11));
+        }
+
+        else if(intent_id==12)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_12));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_12));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_12));
+        }
+
+        else if(intent_id==13)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_13));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_13));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_13));
+        }
+
+        else if(intent_id==14)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_14));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_14));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_14));
+        }
+
+        else if(intent_id==15)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_15));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_15));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_15));
+        }
+
+        else if(intent_id==16)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_16));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_16));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_16));
+        }
+
+        else if(intent_id==17)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_17));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_17));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_17));
+        }
+
+        else if(intent_id==18)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_18));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_18));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_18));
+        }
+
+        else if(intent_id==19)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_19));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_19));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_19));
+        }
+
+        else if(intent_id==20)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_20));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_20));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_20));
+        }
+
+        else if(intent_id==21)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_21));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_21));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_21));
+        }
+
+        else if(intent_id==22)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_22));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_22));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_22));
+        }
+
+        else if(intent_id==23)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_23));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_23));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_23));
+        }
+
+        else if(intent_id==24)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_24));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_24));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_24));
+        }
+
+        else if(intent_id==25)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_25));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_25));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_25));
+        }
+
+        else if(intent_id==26)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_26));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_26));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_26));
+        }
+
+        else if(intent_id==27)
+        {
+            toolbar.setBackgroundColor(getResources().getColor(R.color.color_27));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_27));
+            actionButton.setButtonColor(getResources().getColor(R.color.color_27));
+        }
+
+
+        //Crear el OnClickListener para cargar el XML con la función readXML y pasar a Simulacro_1 mediante intent
+        actionButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
                 try {
                     readXML();
 
                     Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
+                    myIntent.putExtra("asignatura", intent_asignatura);
+                    myIntent.putExtra("intent_id", intent_id);
                     startActivity(myIntent);
 
-                }
-                catch (XmlPullParserException e) {
+                } catch (XmlPullParserException e) {
                     e.printStackTrace();
                 }
 
-                return true;
+
             }
         });
-
-            actionButton.setRippleEffectEnabled(true);
-
-
-            intent_id++;
-            if(intent_id==1)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_1));
-                int documentoxml = R.raw.examen1;
-            }
-
-            else if(intent_id==2)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_2));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_2));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_2));
-            }
-
-            else if(intent_id==3)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_3));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_3));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_3));
-            }
-
-            else if(intent_id==4)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_4));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_4));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_4));
-            }
-
-            else if(intent_id==5)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_5));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_5));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_5));
-            }
-
-            else if(intent_id==6)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_6));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_6));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_6));
-            }
-
-            else if(intent_id==7)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_7));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_7));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_7));
-            }
-
-            else if(intent_id==8)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_8));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_8));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_8));
-            }
-
-            else if(intent_id==9)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_9));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_9));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_9));
-            }
-
-            else if(intent_id==10)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_10));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_10));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_10));
-            }
-
-            else if(intent_id==11)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_11));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_11));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_11));
-            }
-
-            else if(intent_id==12)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_12));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_12));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_12));
-            }
-
-            else if(intent_id==13)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_13));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_13));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_13));
-            }
-
-            else if(intent_id==14)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_14));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_14));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_14));
-            }
-
-            else if(intent_id==15)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_15));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_15));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_15));
-            }
-
-            else if(intent_id==16)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_16));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_16));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_16));
-            }
-
-            else if(intent_id==17)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_17));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_17));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_17));
-            }
-
-            else if(intent_id==18)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_18));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_18));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_18));
-            }
-
-            else if(intent_id==19)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_19));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_19));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_19));
-            }
-
-            else if(intent_id==20)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_20));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_20));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_20));
-            }
-
-            else if(intent_id==21)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_21));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_21));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_21));
-            }
-
-            else if(intent_id==22)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_22));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_22));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_22));
-            }
-
-            else if(intent_id==23)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_23));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_23));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_23));
-            }
-
-            else if(intent_id==24)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_24));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_24));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_24));
-            }
-
-            else if(intent_id==25)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_25));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_25));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_25));
-            }
-
-            else if(intent_id==26)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_26));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_26));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_26));
-            }
-
-            else if(intent_id==27)
-
-            {
-                toolbar.setBackgroundColor(getResources().getColor(R.color.color_27));
-                actionButton.setButtonColorPressed(getResources().getColor(R.color.color_27));
-                actionButton.setButtonColor(getResources().getColor(R.color.color_27));
-            }
-
-            setSupportActionBar(toolbar);
-
-            // this method show home button in toolbar
-            getSupportActionBar().
-            setDisplayHomeAsUpEnabled(true);
-
-            toolbar.setNavigationOnClickListener(new View.OnClickListener()
-
-            {
-                @Override
-                public void onClick (View view){
-                NavUtils.navigateUpTo(Pre_simulacro.this, IntentCompat.makeMainActivity(new ComponentName(Pre_simulacro.this, Pre_simulacro.class)));
-            }
-            }
-
-            );
 
     }
 
@@ -442,24 +422,6 @@ public class Pre_simulacro extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        //PRUEBAS PARA OBTENER LOS STRINGS A PARTIR DEL ARRAYLIST
-
-        /*TextView txt_enunciado = (TextView) findViewById(R.id.show_enunciado);
-
-        String[] prueba1 = simulacro.get(630);
-        String prueba2 = prueba1[1];
-        Log.i("EIR-App, Respuesta:", prueba1[1]);
-        txt_enunciado.setText(prueba2);
-
-
-
-        TextView txt_opcion1 = (TextView) findViewById(R.id.show_opcion1);
-        TextView txt_opcion2 = (TextView) findViewById(R.id.show_opcion2);
-        TextView txt_opcion3 = (TextView) findViewById(R.id.show_opcion3);
-        TextView txt_opcion4 = (TextView) findViewById(R.id.show_opcion4);
-        TextView txt_opcion5 = (TextView) findViewById(R.id.show_opcion5);*/
-
 
     }
 
