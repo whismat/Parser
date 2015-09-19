@@ -58,6 +58,9 @@ public class Pre_simulacro extends AppCompatActivity {
         //Crear y cambiar el título a la Toolbar
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
 
+        //Cambiar el título
+        toolbar.setTitle(intent_asignatura);
+
         setSupportActionBar(toolbar);
 
         getSupportActionBar().
@@ -75,8 +78,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
         );
 
-        //Cambiar el título
-        toolbar.setTitle(intent_asignatura);
+
 
         //Crear el Floating Action Button
         ActionButton actionButton = (ActionButton) findViewById(R.id.pre_simulacro_action_button);
