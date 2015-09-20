@@ -336,7 +336,7 @@ public class Pre_simulacro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                    SystemClock.sleep(1000);
+                    SystemClock.sleep(1010);
                     Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
                     myIntent.putExtra("asignatura", intent_asignatura);
                     myIntent.putExtra("intent_id", intent_id);
