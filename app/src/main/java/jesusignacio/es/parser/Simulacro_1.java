@@ -44,7 +44,6 @@ public class Simulacro_1 extends AppCompatActivity {
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
 
-            int documentoxml = R.raw.examen1;
         }
 
         else if(intent_id==2)

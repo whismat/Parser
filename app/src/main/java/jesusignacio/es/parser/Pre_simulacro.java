@@ -1,11 +1,7 @@
 package jesusignacio.es.parser;
 
-import android.app.Notification;
 import android.content.ComponentName;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.PaintDrawable;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v4.app.NavUtils;
 import android.support.v4.content.IntentCompat;
@@ -14,12 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.software.shell.fab.ActionButton;
 
@@ -35,13 +26,11 @@ import java.util.ArrayList;
  */
 public class Pre_simulacro extends AppCompatActivity {
     private Toolbar toolbar;
-    private ImageButton button;
-    public int documentoxml;
-    public int color_asignatura;
-    public String intent_asignatura;
+
     private XmlPullParserFactory xmlFactoryObject;
     public volatile boolean parsingComplete = true;
     final ArrayList<String[]> simulacro = new ArrayList<String[]>();
+    InputStream inputstream;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +82,8 @@ public class Pre_simulacro extends AppCompatActivity {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
             actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1));
             actionButton.setButtonColor(getResources().getColor(R.color.color_1));
-            documentoxml = R.raw.examen1;
+
+            inputstream = getResources().openRawResource(R.raw.examen1);
         }
 
         else if(intent_id==2)
@@ -306,12 +296,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
     private void readXML() throws XmlPullParserException {
 
-
-        InputStream inputstream = null;
         try {
-
-            inputstream = getResources().openRawResource(R.raw.examen1);
-
 
             xmlFactoryObject = XmlPullParserFactory.newInstance();
             XmlPullParser parser = xmlFactoryObject.newPullParser();
@@ -329,8 +314,6 @@ public class Pre_simulacro extends AppCompatActivity {
     public void parseXML(XmlPullParser parser) {
         int event;
         String text = null;
-        String enunciado = null, opcion1 = null, opcion2 = null, opcion3 = null, opcion4 = null, opcion5 = null;
-        int i_bloque = 0;
         int i_respuesta = 0;
 
         //Crear ArrayList simulacro
@@ -358,7 +341,6 @@ public class Pre_simulacro extends AppCompatActivity {
 
                         if (name.equals("code")) {
 
-                            //int code = Integer.parseInt(text);
                             bloque = new String[8]; // create a new array
                             Log.i("EIR-App code", text);
                             bloque[0] = text;
@@ -409,18 +391,16 @@ public class Pre_simulacro extends AppCompatActivity {
                             }
                         }
                         else if (name.equals("respuesta")) {
-                            int respuesta = Integer.parseInt(text);;
-
                             bloque[7] = text;
 
                         }
                         else if (name.equals("pregunta")) {
+
                             //Añadir bloque a simulacro:
                             i_respuesta = 0;
                             simulacro.add(bloque);
                         }
 
-                        //Log.i("EIR-App: get(0)", simulacro.get(0).toString());
                         break;
                 }
                 event = parser.next();
@@ -437,19 +417,15 @@ public class Pre_simulacro extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
