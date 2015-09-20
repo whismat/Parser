@@ -31,6 +31,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
         final int intent_id = myIntent.getIntExtra("intent_id", 0); // here 0 is the default value
+        final String enunciadostring = myIntent.getStringExtra("simulacrostring");
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
@@ -243,10 +244,10 @@ public class Simulacro_1 extends AppCompatActivity {
         //Resultado
         //String resultado = bloque.get(0).toString();
 
-        String enunciado = "pepe";
+
 
         TextView txtCambiado = (TextView)findViewById(R.id.show_enunciado);
-        txtCambiado.setText(enunciado);
+        txtCambiado.setText(enunciadostring);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                                                  @Override
