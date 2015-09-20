@@ -3,8 +3,10 @@ package jesusignacio.es.parser;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.NavUtils;
 import android.support.v4.content.IntentCompat;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -26,6 +28,7 @@ import java.util.ArrayList;
  */
 public class Pre_simulacro extends AppCompatActivity {
     private Toolbar toolbar;
+
 
     private XmlPullParserFactory xmlFactoryObject;
     public static boolean parsingComplete = true;
@@ -83,7 +86,7 @@ public class Pre_simulacro extends AppCompatActivity {
             actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_1));
 
-            inputstream = getResources().openRawResource(R.raw.sample);
+            inputstream = getResources().openRawResource(R.raw.examen1);
         }
 
         else if(intent_id==2)
@@ -330,14 +333,16 @@ public class Pre_simulacro extends AppCompatActivity {
 
         //Crear el OnClickListener para cargar el XML con la función readXML y pasar a Simulacro_1 mediante intent
         actionButton.setOnClickListener(new View.OnClickListener() {
-
+            @Override
             public void onClick(View v) {
 
+                    SystemClock.sleep(1000);
                     Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
                     myIntent.putExtra("asignatura", intent_asignatura);
                     myIntent.putExtra("intent_id", intent_id);
                     //myIntent.putStringArrayListExtra("simulacro", simulacro);
                     actionButton.playHideAnimation();
+
                     startActivity(myIntent);
 
             }

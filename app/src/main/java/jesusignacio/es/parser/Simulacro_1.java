@@ -39,6 +39,9 @@ public class Simulacro_1 extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().
+        setDisplayHomeAsUpEnabled(true);
 
         fondo_enunciado = (ScrollView) findViewById(R.id.textAreaScroller);
 
@@ -48,6 +51,18 @@ public class Simulacro_1 extends AppCompatActivity {
         TextView txtOpcion3 = (TextView)findViewById(R.id.show_opcion3);
         TextView txtOpcion4 = (TextView)findViewById(R.id.show_opcion4);
         TextView txtOpcion5 = (TextView)findViewById(R.id.show_opcion5);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener()
+
+                                             {
+                                                 @Override
+                                                 public void onClick(View view) {
+                                                     NavUtils.navigateUpTo(Simulacro_1.this, IntentCompat.makeMainActivity(new ComponentName(Simulacro_1.this, Simulacro_1.class)));
+                                                 }
+                                             }
+
+        );
+
 
         txtOpcion1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -299,9 +314,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         }
 
-        setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         ////////////////////////////////////////////////////////////////////////////////////////////////
         //Añadir elementos
