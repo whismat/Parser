@@ -15,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.rey.material.widget.Slider;
 import com.software.shell.fab.ActionButton;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -29,6 +30,7 @@ import java.util.ArrayList;
  */
 public class Pre_simulacro extends AppCompatActivity {
     private Toolbar toolbar;
+    private Slider slider;
 
 
     private XmlPullParserFactory xmlFactoryObject;
@@ -74,6 +76,8 @@ public class Pre_simulacro extends AppCompatActivity {
 
         );
 
+        slider = (Slider) findViewById(R.id.pre_simulacro_slider);
+
         //Crear el Floating Action Button
         final ActionButton actionButton = (ActionButton) findViewById(R.id.pre_simulacro_action_button);
         actionButton.setRippleEffectEnabled(false);
@@ -85,6 +89,7 @@ public class Pre_simulacro extends AppCompatActivity {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
             actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_1));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_1));
 
             inputstream = getResources().openRawResource(R.raw.examen1);
         }
@@ -94,6 +99,7 @@ public class Pre_simulacro extends AppCompatActivity {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_2));
             actionButton.setButtonColorPressed(getResources().getColor(R.color.color_2b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_2));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_2));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -103,6 +109,7 @@ public class Pre_simulacro extends AppCompatActivity {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_3));
             actionButton.setButtonColorPressed(getResources().getColor(R.color.color_3b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_3));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_3));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -110,8 +117,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==4)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_4));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_4));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_4b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_4));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_4));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -119,8 +127,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==5)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_5));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_5));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_5b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_5));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_5));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -128,8 +137,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==6)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_6));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_6));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_6b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_6));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_6));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -137,8 +147,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==7)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_7));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_7));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_7b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_7));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_7));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -146,8 +157,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==8)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_8));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_8));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_8b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_8));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_8));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -155,8 +167,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==9)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_9));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_9));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_9b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_9));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_9));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -164,8 +177,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==10)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_10));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_10));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_10b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_10));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_10));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -173,8 +187,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==11)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_11));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_11));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_11b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_11));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_11));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -182,8 +197,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==12)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_12));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_12));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_12b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_12));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_12));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -191,8 +207,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==13)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_13));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_13));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_13b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_13));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_13));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -200,8 +217,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==14)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_14));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_14));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_14b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_14));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_14));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -209,8 +227,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==15)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_15));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_15));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_15b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_15));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_15));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -218,8 +237,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==16)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_16));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_16));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_16b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_16));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_16));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -227,8 +247,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==17)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_17));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_17));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_17b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_17));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_17));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -236,8 +257,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==18)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_18));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_18));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_18b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_18));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_18));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -245,8 +267,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==19)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_19));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_19));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_19b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_19));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_19));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -254,8 +277,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==20)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_20));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_20));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_20b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_20));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_20));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -263,8 +287,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==21)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_21));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_21));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_21b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_21));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_21));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -272,8 +297,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==22)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_22));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_22));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_22b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_22));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_22));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -281,8 +307,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==23)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_23));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_23));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_23b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_23));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_23));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -290,8 +317,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==24)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_24));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_24));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_24b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_24));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_24));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -299,8 +327,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==25)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_25));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_25));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_25b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_25));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_25));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -308,8 +337,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==26)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_26));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_26));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_26b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_26));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_26));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
@@ -317,8 +347,9 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==27)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_27));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_27));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_27b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_27));
+            slider.setPrimaryColor(getResources().getColor(R.color.color_27));
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }

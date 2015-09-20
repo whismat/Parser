@@ -49,26 +49,14 @@
             />
         <!-- use Material.Widget.Slider.Discrete style for discrete mode https://github.com/rey5137/Material/wiki/Slider-->
         <com.rey.material.widget.Slider
-            style="@style/Material.Widget.Slider.Discrete"
+            style="@style/Slider"
+            android:id="@+id/pre_simulacro_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
             android:gravity="center_horizontal"
-            app:sl_discreteMode="true"
-            app:sl_textColor="FF696969"
-            app:sl_stepValue="20"
-            app:sl_minValue="10"
-            app:sl_maxValue="50"
             />
-        <!--app:sl_secondaryColor="FF696969"
-        app:sl_discreteMode="true"
-        app:sl_stepValue="10"
-        app:sl_Value="40"
-        app:sl_minValue="10"
-        app:sl_maxValue="50"
-        />
-        app:sl_primaryColor="FF696969"-->
-
 
     </LinearLayout>
 

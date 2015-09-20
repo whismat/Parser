@@ -6,4 +6,24 @@
         <item name="colorAccent">@color/color_accent</item>
     </style>
 
+    <style name="Slider">
+        <item name="sl_trackSize">1dp</item>
+        <item name="sl_trackCap">square</item>
+        <item name="sl_thumbBorderSize">2dp</item>
+        <item name="sl_thumbRadius">10dp</item>
+        <item name="sl_thumbFocusRadius">14dp</item>
+        <item name="sl_travelAnimDuration">@android:integer/config_shortAnimTime</item>
+        <item name="sl_transformAnimDuration">@android:integer/config_shortAnimTime</item>
+        <item name="sl_interpolator">@android:anim/decelerate_interpolator</item>
+        <item name="sl_minValue">10</item>
+        <item name="sl_primaryColor">#fb303030</item>
+        <item name="sl_secondaryColor">#fbb9b9b9</item>
+        <item name="sl_maxValue">50</item>
+        <item name="sl_stepValue">10</item>
+        <item name="sl_value">40</item>
+        <item name="sl_discreteMode">true</item>
+        <item name="sl_textSize">@dimen/abc_text_size_small_material</item>
+        <item name="sl_textColor">#FFFFFFFF</item>
+        <item name="sl_alwaysFillThumb">false</item>
+    </style>
 </resources>

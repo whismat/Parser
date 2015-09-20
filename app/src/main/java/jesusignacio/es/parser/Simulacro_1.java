@@ -334,7 +334,7 @@ public class Simulacro_1 extends AppCompatActivity {
         //String resultado = bloque.get(0).toString();
 
         //A borrar:
-        String enunciadostring = "La etapa del proceso de mitosis, la cual es el proceso de división celular, indispensable en los organismos vivos pluricelulares, en que las dos cromátides se marchan a polos opuestos del núcleo duplicando con ellos el número de cromosomas es la (que conste que me estoy enrollando para ver hasta qué punto se puede hacer scroll en la aplicación en el cabecero del enunciado): ";
+        String enunciadostring = "La etapa del proceso de mitosis, el momento en que las dos cromátidas se marchan a polos opuestos del núcleo duplicando con ellos el número de cromosomas es: ";
         String opcion1string = "Profase";
         String opcion2string = "Metafase";
         String opcion3string = "Alofase";
