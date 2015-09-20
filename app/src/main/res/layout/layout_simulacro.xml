@@ -2,7 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:id="@+id/layout_simulacro">
 
     <include
@@ -10,7 +9,7 @@
         layout="@layout/toolbar">
     </include>
 
-    <LinearLayout
+    <RelativeLayout android:id="@+id/textAreaScrollercontainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/toolbar_main"
@@ -19,9 +18,6 @@
         <ScrollView android:id="@+id/textAreaScroller"
             android:layout_width="fill_parent"
             android:layout_height="173dp"
-            android:background="@color/ColorPrimaryDark"
-            android:layout_x="0dp"
-            android:layout_y="25dp"
             android:scrollbars="vertical"
             >
 
@@ -29,38 +25,47 @@
             android:id="@+id/show_enunciado"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:fontFamily="Arial"
-            android:padding="20dp"
+            android:padding="14dp"
             android:text="@string/enunciado"
         />
 
         </ScrollView>
-
-        <!--LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:background="@color/ColorPrimaryDark"
+            android:layout_height="14dp"
             android:orientation="vertical"
-            /-->
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/toolbar_shadow"
+            />
+    </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="#fff"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAreaScrollercontainer"
             android:orientation="vertical"
-            />
-
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/toolbar_shadow"
+                android:layout_alignParentTop="true"
+                />
         <TextView
             android:id="@+id/show_opcion1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:fontFamily="Arial"
             android:text="Opcion1"
             />
@@ -71,7 +76,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:fontFamily="Arial"
             android:text="Opcion2"
             />
@@ -82,7 +87,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:fontFamily="Arial"
             android:text="Opcion3"
             />
@@ -93,7 +98,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:fontFamily="Arial"
             android:text="Opcion4"
             />
@@ -104,17 +109,16 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="16sp"
+            android:textSize="18sp"
             android:fontFamily="Arial"
             android:text="Opcion5"
             />
+        </LinearLayout>
 
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fff"
         android:orientation="vertical"
         android:layout_alignParentBottom="true"
         >
