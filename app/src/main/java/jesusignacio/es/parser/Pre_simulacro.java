@@ -93,7 +93,7 @@ public class Pre_simulacro extends AppCompatActivity {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
             actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1));
             actionButton.setButtonColor(getResources().getColor(R.color.color_1));
-            int documentoxml = R.raw.examen1;
+            documentoxml = R.raw.examen1;
         }
 
         else if(intent_id==2)
@@ -278,14 +278,18 @@ public class Pre_simulacro extends AppCompatActivity {
             actionButton.setButtonColor(getResources().getColor(R.color.color_27));
         }
 
+        try {
+           readXML();
+
+        } catch (XmlPullParserException e) {
+            e.printStackTrace();
+        }
+
 
         //Crear el OnClickListener para cargar el XML con la función readXML y pasar a Simulacro_1 mediante intent
         actionButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-
-                try {
-                    readXML();
 
                     Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
                     myIntent.putExtra("asignatura", intent_asignatura);
@@ -293,9 +297,6 @@ public class Pre_simulacro extends AppCompatActivity {
                     myIntent.putExtra("simulacro", simulacro);
                     startActivity(myIntent);
 
-                } catch (XmlPullParserException e) {
-                    e.printStackTrace();
-                }
 
 
             }
@@ -311,12 +312,13 @@ public class Pre_simulacro extends AppCompatActivity {
 
             inputstream = getResources().openRawResource(R.raw.examen1);
 
+
             xmlFactoryObject = XmlPullParserFactory.newInstance();
             XmlPullParser parser = xmlFactoryObject.newPullParser();
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
 
             parser.setInput(inputstream, null);
-            Log.i("EIR-App", "Cargado XML");
+            Log.i("EIR-App", "Cargando XML");
             parseXML(parser);
         }
         catch (XmlPullParserException e) {
@@ -334,13 +336,8 @@ public class Pre_simulacro extends AppCompatActivity {
         //Crear ArrayList simulacro
         //Crear ArrayList bloque, que serán los nodos del ArrayList simulacro
         //Posiciones:
-        // 0 = enunciado, 1 = code, 2 = respuesta, 3 = ArrayList de Opciones
-
-
-
 
         String[] bloque = new String[8];
-
 
         try {
             event = parser.getEventType();
@@ -363,16 +360,14 @@ public class Pre_simulacro extends AppCompatActivity {
 
                             //int code = Integer.parseInt(text);
                             bloque = new String[8]; // create a new array
-
+                            Log.i("EIR-App code", text);
                             bloque[0] = text;
-
-
                         }
 
                         else if (name.equals("enunciado")) {
 
-
                             bloque[1] = text;
+                            Log.i("EIR-App enunciado", text);
 
                         }
 
@@ -381,30 +376,35 @@ public class Pre_simulacro extends AppCompatActivity {
                             if (i_respuesta == 0) {
 
                                 bloque[2] = text;
+                                Log.i("EIR-App opcion1", text);
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 1) {
 
                                 bloque[3] = text;
+                                Log.i("EIR-App opcion2", text);
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 2) {
 
                                 bloque[4] = text;
+                                Log.i("EIR-App opcion3", text);
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 3) {
 
                                 bloque[5] = text;
+                                Log.i("EIR-App opcion4", text);
                                 i_respuesta++;
 
                             }
                             else if (i_respuesta == 4) {
 
                                 bloque[6] = text;
+                                Log.i("EIR-App opcion5", text);
                                 i_respuesta = 0;
                             }
                         }
@@ -416,6 +416,8 @@ public class Pre_simulacro extends AppCompatActivity {
                             simulacro.add(bloque);
 
                         }
+
+                        //Log.i("EIR-App: get(0)", simulacro.get(0).toString());
                         break;
                 }
                 event = parser.next();

@@ -7,6 +7,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v4.content.IntentCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,7 +32,7 @@ public class Simulacro_1 extends AppCompatActivity {
         final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
         final int intent_id = myIntent.getIntExtra("intent_id", 0); // here 0 is the default value
 
-        ArrayList<String> simulacro = myIntent.getStringArrayListExtra("string_array"); //Capturar el ArrayList simulacro
+        ArrayList<String> simulacro = myIntent.getStringArrayListExtra("simulacro"); //Capturar el ArrayList simulacro
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
@@ -244,23 +245,24 @@ public class Simulacro_1 extends AppCompatActivity {
 
         ArrayList<String> pregunta = new ArrayList<String>();
 
+        //Log.i("Eir-App", simulacro.get(0));
         //pregunta.add(simulacro.get(0));
 
-        //txtCambiado.setText(pregunta.get(0));
+        //txtCambiado.setText(pregunta.get(1));
+
+
 
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Crear el menu y añadir los elementos.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+        // Gestionar los clicks sobre los elementos del menu.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
