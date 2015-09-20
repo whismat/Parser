@@ -1,8 +1,10 @@
 package jesusignacio.es.parser;
 
 import android.content.ComponentName;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.support.v4.content.IntentCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +42,48 @@ public class Simulacro_1 extends AppCompatActivity {
 
         fondo_enunciado = (ScrollView) findViewById(R.id.textAreaScroller);
 
+        TextView txtEnunciado = (TextView)findViewById(R.id.show_enunciado);
+        TextView txtOpcion1 = (TextView)findViewById(R.id.show_opcion1);
+        TextView txtOpcion2 = (TextView)findViewById(R.id.show_opcion2);
+        TextView txtOpcion3 = (TextView)findViewById(R.id.show_opcion3);
+        TextView txtOpcion4 = (TextView)findViewById(R.id.show_opcion4);
+        TextView txtOpcion5 = (TextView)findViewById(R.id.show_opcion5);
+
+        txtOpcion1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "¡Incorrecto!", Snackbar.LENGTH_SHORT).show();
+            }
+
+        });
+        txtOpcion2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "¡Correcto!", Snackbar.LENGTH_SHORT).show();
+            }
+
+        });
+        txtOpcion3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "¡Incorrecto!", Snackbar.LENGTH_SHORT).show();
+            }
+
+        });
+        txtOpcion4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "¡Incorrecto!", Snackbar.LENGTH_SHORT).show();
+            }
+
+        });
+        txtOpcion5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "¡Incorrecto!", Snackbar.LENGTH_SHORT).show();
+            }
+
+        });
 
         //Cambiar el color a la ActionBar
         if(intent_id==1)
@@ -277,19 +321,12 @@ public class Simulacro_1 extends AppCompatActivity {
         //String resultado = bloque.get(0).toString();
 
         //A borrar:
-        String enunciadostring = "La etapa del proceso de mitosis en que las dos cromátides a polos opuestos del núcleo duplicando con ellos el número de cromosomas es la: ";
+        String enunciadostring = "La etapa del proceso de mitosis, la cual es el proceso de división celular, indispensable en los organismos vivos pluricelulares, en que las dos cromátides se marchan a polos opuestos del núcleo duplicando con ellos el número de cromosomas es la (que conste que me estoy enrollando para ver hasta qué punto se puede hacer scroll en la aplicación en el cabecero del enunciado): ";
         String opcion1string = "Profase";
         String opcion2string = "Metafase";
         String opcion3string = "Alofase";
         String opcion4string = "Telofase";
         String opcion5string = "Intefase";
-
-        TextView txtEnunciado = (TextView)findViewById(R.id.show_enunciado);
-        TextView txtOpcion1 = (TextView)findViewById(R.id.show_opcion1);
-        TextView txtOpcion2 = (TextView)findViewById(R.id.show_opcion2);
-        TextView txtOpcion3 = (TextView)findViewById(R.id.show_opcion3);
-        TextView txtOpcion4 = (TextView)findViewById(R.id.show_opcion4);
-        TextView txtOpcion5 = (TextView)findViewById(R.id.show_opcion5);
 
         txtEnunciado.setText(enunciadostring);
         txtOpcion1.setText(opcion1string);
@@ -298,14 +335,8 @@ public class Simulacro_1 extends AppCompatActivity {
         txtOpcion4.setText(opcion4string);
         txtOpcion5.setText(opcion5string);
 
-        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-                                                 @Override
-                                                 public void onClick(View view) {
-                                                     NavUtils.navigateUpTo(Simulacro_1.this, IntentCompat.makeMainActivity(new ComponentName(Simulacro_1.this, Simulacro_1.class)));
-                                                 }
-                                             }
+        //Listeners:
 
-        );
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
