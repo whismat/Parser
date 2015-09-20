@@ -244,7 +244,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         ArrayList<String> pregunta = new ArrayList<String>();
 
-        //Log.i("Eir-App", simulacro.get(0));
+        Log.i("Eir-App", simulacro.get(0));
         //pregunta.add(simulacro.get(0));
 
         //txtCambiado.setText(pregunta.get(1));
