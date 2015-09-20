@@ -1,33 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<examen>
-	<pregunta>
-		<code>5698</code>
-      		<enunciado>¿Cual de los siguientes pares de bases NO forma parte de la molécula de ADN?</enunciado>
-    		<opcion>Guanina-citosina </opcion>
-      		<opcion>Adenina-timina </opcion>
-      		<opcion>Adenina-uracilo</opcion>
-      		<opcion>Timina-Adenina</opcion>
-      		<opcion>Citosina-Guanina</opcion>
-      		<respuesta>3</respuesta>
-	</pregunta>
-	<pregunta>
-		<code>5699</code>
-      		<enunciado>Uno de los siguiente orgánulos celulares genera ATP mediante procesos de respiración aeróbica:</enunciado>
-      		<opcion>Aparato de Golgi</opcion>
-      		<opcion>Lisosomas</opcion>
-      		<opcion>Ribosomas </opcion>
-      		<opcion>Mitocondrias </opcion>
-      		<opcion>Peroxisomas</opcion>
-      		<respuesta>4</respuesta>
-	</pregunta>
-	<pregunta>
-		<code>5700</code>
-      		<enunciado>La etapa del proceso de mitosis en que las dos cromátidas se desplazan a polos opuestos del núcleo duplicando con ellos el número de cromosomas es la: </enunciado>
-      		<opcion>Profase </opcion>
-      		<opcion>Metafase</opcion>
-      		<opcion>Anafase </opcion>
-      		<opcion>Telofase </opcion>
-      		<opcion>Interfase</opcion>
-      		<respuesta>3</respuesta>
-	</pregunta>
-</examen>
+<pregunta>
+      <code>5699</code>
+      <enunciado>Uno de los siguiente orgánulos celulares genera ATP mediante procesos de respiración aeróbica:</enunciado>
+      <opcion>Aparato de Golgi</opcion>
+      <opcion>Lisosomas</opcion>
+      <opcion>Ribosomas </opcion>
+      <opcion>Mitocondrias </opcion>
+      <opcion>Peroxisomas</opcion>
+      <respuesta>4</respuesta>
+</pregunta>
+<pregunta>
+      <code>5700</code>
+      <enunciado>La etapa del proceso de mitosis en que las dos cromátides a polos opuestos del núcleo duplicando con ellos el número de cromosomas es la: </enunciado>
+      <opcion>Profase </opcion>
+      <opcion>Metafase</opcion>
+      <opcion>Anafase </opcion>
+      <opcion>Telofase </opcion>
+      <opcion>Interfase</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>5701</code>
+      <enunciado>¿Cual de las siguientes afirmaciones sobre el timo es falsa?</enunciado>
+      <opcion>Es un órgano localizado en la parte superior del mediastino. </opcion>
+      <opcion>Histológicamente, es característico de este tejido el Corpúsculo de Hassall</opcion>
+      <opcion>Como función principal segrega la limosina responsable de madurar los Linfocitos-T</opcion>
+      <opcion>Su tejido esta densamente poblado de vasos linfáticos. </opcion>
+      <opcion>En edades avanzadas se atrofia totalmente, dejando de hacer su función. </opcion>
+      <respuesta>4</respuesta>
+</pregunta>

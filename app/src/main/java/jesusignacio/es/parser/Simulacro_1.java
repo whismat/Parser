@@ -32,8 +32,6 @@ public class Simulacro_1 extends AppCompatActivity {
         final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
         final int intent_id = myIntent.getIntExtra("intent_id", 0); // here 0 is the default value
 
-        ArrayList<String> simulacro = myIntent.getStringArrayListExtra("simulacro"); //Capturar el ArrayList simulacro
-
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
 
@@ -43,7 +41,6 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
-
         }
 
         else if(intent_id==2)
@@ -229,6 +226,27 @@ public class Simulacro_1 extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        //Añadir elementos
+        //ArrayList Simulacro
+        ArrayList<ArrayList<String[]>> simulacro = new ArrayList<ArrayList<String[]>>();
+        //ArrayList Bloque
+        ArrayList<String[]> bloque = new ArrayList<String[]>();
+        //bloque = simulacro.get(0);
+        //String[] opciones = new String[5];
+        //Code
+        //String code = bloque.get(0).toString();
+        //Enunciado
+        //String enunciado = bloque.get(1).toString();
+        //String[] Opciones
+        //String opciones = bloque.get(0).toString();
+        //Resultado
+        //String resultado = bloque.get(0).toString();
+
+        String enunciado = "pepe";
+
+        TextView txtCambiado = (TextView)findViewById(R.id.show_enunciado);
+        txtCambiado.setText(enunciado);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                                                  @Override
@@ -238,19 +256,6 @@ public class Simulacro_1 extends AppCompatActivity {
                                              }
 
         );
-
-        //Cambiar el texto de enunciado con el valor 0
-        TextView txtCambiado = (TextView)findViewById(R.id.show_enunciado);
-
-        ArrayList<String> pregunta = new ArrayList<String>();
-
-        Log.i("Eir-App", simulacro.get(0));
-        //pregunta.add(simulacro.get(0));
-
-        //txtCambiado.setText(pregunta.get(1));
-
-
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
