@@ -33,7 +33,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
         final int intent_id = myIntent.getIntExtra("intent_id", 0); // here 0 is the default value
-        final String enunciadostring = myIntent.getStringExtra("simulacrostring");
+        //final String enunciadostring = myIntent.getStringExtra("simulacrostring");
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
@@ -276,10 +276,27 @@ public class Simulacro_1 extends AppCompatActivity {
         //Resultado
         //String resultado = bloque.get(0).toString();
 
+        //A borrar:
+        String enunciadostring = "La etapa del proceso de mitosis en que las dos cromátides a polos opuestos del núcleo duplicando con ellos el número de cromosomas es la: ";
+        String opcion1string = "Profase";
+        String opcion2string = "Metafase";
+        String opcion3string = "Alofase";
+        String opcion4string = "Telofase";
+        String opcion5string = "Intefase";
 
+        TextView txtEnunciado = (TextView)findViewById(R.id.show_enunciado);
+        TextView txtOpcion1 = (TextView)findViewById(R.id.show_opcion1);
+        TextView txtOpcion2 = (TextView)findViewById(R.id.show_opcion2);
+        TextView txtOpcion3 = (TextView)findViewById(R.id.show_opcion3);
+        TextView txtOpcion4 = (TextView)findViewById(R.id.show_opcion4);
+        TextView txtOpcion5 = (TextView)findViewById(R.id.show_opcion5);
 
-        TextView txtCambiado = (TextView)findViewById(R.id.show_enunciado);
-        txtCambiado.setText(enunciadostring);
+        txtEnunciado.setText(enunciadostring);
+        txtOpcion1.setText(opcion1string);
+        txtOpcion2.setText(opcion2string);
+        txtOpcion3.setText(opcion3string);
+        txtOpcion4.setText(opcion4string);
+        txtOpcion5.setText(opcion5string);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                                                  @Override
