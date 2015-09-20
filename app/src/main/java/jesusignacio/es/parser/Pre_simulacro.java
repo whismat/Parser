@@ -405,16 +405,19 @@ public class Pre_simulacro extends AppCompatActivity {
 
                                 bloque[6] = text;
                                 Log.i("EIR-App opcion5", text);
-                                i_respuesta = 0;
+                                
                             }
                         }
                         else if (name.equals("respuesta")) {
                             int respuesta = Integer.parseInt(text);;
 
                             bloque[7] = text;
-                            //Añadir bloque a simulacro:
-                            simulacro.add(bloque);
 
+                        }
+                        else if (name.equals("pregunta")) {
+                            //Añadir bloque a simulacro:
+                            i_respuesta = 0;
+                            simulacro.add(bloque);
                         }
 
                         //Log.i("EIR-App: get(0)", simulacro.get(0).toString());
