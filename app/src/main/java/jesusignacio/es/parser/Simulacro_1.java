@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 public class Simulacro_1 extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private ScrollView fondo_enunciado;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -36,18 +38,23 @@ public class Simulacro_1 extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
 
+        fondo_enunciado = (ScrollView) findViewById(R.id.textAreaScroller);
+
 
         //Cambiar el color a la ActionBar
         if(intent_id==1)
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_1b));
+
         }
 
         else if(intent_id==2)
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_2));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_2b));
 
         }
 
@@ -55,6 +62,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_3));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_3b));
 
         }
 
@@ -62,6 +70,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_4));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_4b));
 
         }
 
@@ -69,6 +78,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_5));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_5b));
 
         }
 
@@ -76,6 +86,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_6));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_6b));
 
         }
 
@@ -83,6 +94,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_7));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_7b));
 
         }
 
@@ -90,6 +102,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_8));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_8b));
 
         }
 
@@ -97,6 +110,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_9));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_9b));
 
         }
 
@@ -104,6 +118,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_10));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_10b));
 
         }
 
@@ -111,6 +126,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_11));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_11b));
 
         }
 
@@ -118,6 +134,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_12));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_12b));
 
         }
 
@@ -125,6 +142,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_13));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_13b));
 
         }
 
@@ -132,6 +150,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_14));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_14b));
 
         }
 
@@ -139,6 +158,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_15));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_15b));
 
         }
 
@@ -146,6 +166,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_16));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_16b));
 
         }
 
@@ -153,6 +174,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_17));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_17b));
 
         }
 
@@ -160,6 +182,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_18));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_18b));
 
         }
 
@@ -167,6 +190,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_19));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_19b));
 
         }
 
@@ -174,18 +198,21 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_20));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_20b));
          }
 
         else if(intent_id==21)
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_21));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_21b));
         }
 
         else if(intent_id==22)
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_22));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_22b));
 
         }
 
@@ -193,12 +220,14 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_23));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_23b));
         }
 
         else if(intent_id==24)
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_24));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_24b));
 
         }
 
@@ -206,6 +235,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_25));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_25b));
 
         }
 
@@ -213,6 +243,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_26));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_26b));
 
         }
 
@@ -220,6 +251,7 @@ public class Simulacro_1 extends AppCompatActivity {
 
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_27));
+            fondo_enunciado.setBackgroundColor(getResources().getColor(R.color.color_27b));
 
         }
 

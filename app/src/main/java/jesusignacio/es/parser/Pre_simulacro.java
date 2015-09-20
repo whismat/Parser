@@ -70,11 +70,9 @@ public class Pre_simulacro extends AppCompatActivity {
 
         );
 
-
-
         //Crear el Floating Action Button
         final ActionButton actionButton = (ActionButton) findViewById(R.id.pre_simulacro_action_button);
-        actionButton.setRippleEffectEnabled(false);
+        actionButton.setRippleEffectEnabled(true);
         actionButton.playShowAnimation();
 
         //Le cambio el color a la ActionBar y al ActionButton
@@ -82,7 +80,7 @@ public class Pre_simulacro extends AppCompatActivity {
         if(intent_id==1)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_1b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_1));
 
             inputstream = getResources().openRawResource(R.raw.sample);
@@ -91,7 +89,7 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==2)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_2));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_2));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_2b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_2));
 
             inputstream = getResources().openRawResource(R.raw.sample);
@@ -100,7 +98,7 @@ public class Pre_simulacro extends AppCompatActivity {
         else if(intent_id==3)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_3));
-            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_3));
+            actionButton.setButtonColorPressed(getResources().getColor(R.color.color_3b));
             actionButton.setButtonColor(getResources().getColor(R.color.color_3));
 
             inputstream = getResources().openRawResource(R.raw.sample);
