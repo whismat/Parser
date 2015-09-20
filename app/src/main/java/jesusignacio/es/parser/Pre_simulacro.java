@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.software.shell.fab.ActionButton;
 
@@ -75,8 +76,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
         //Crear el Floating Action Button
         final ActionButton actionButton = (ActionButton) findViewById(R.id.pre_simulacro_action_button);
-        actionButton.setRippleEffectEnabled(true);
-        actionButton.playShowAnimation();
+        actionButton.setRippleEffectEnabled(false);
 
         //Le cambio el color a la ActionBar y al ActionButton
 
@@ -330,13 +330,29 @@ public class Pre_simulacro extends AppCompatActivity {
             e.printStackTrace();
         }
 
+        //Pruebas
+        //Crear un array
+        //iterate on the general list
+        //for(int i = 0 ; i < simulacro.size() ; i++) {
+         //   ArrayList<String[]> currentList = simulacro.get(i);
+            //now iterate on the current list
+           // for (int j = 0; j < currentList.size(); j++) {
+             //   String[] currentList2 = currentList.get(j);
+               // for (int k = 0; k < currentList2.size() )
+                //;
+           // }
+       // }
+
+
+        TextView showstring = (TextView)findViewById(R.id.show_string);
+        //showstring.setText(simulacro.toString());
 
         //Crear el OnClickListener para cargar el XML con la función readXML y pasar a Simulacro_1 mediante intent
         actionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                    SystemClock.sleep(1010);
+                    SystemClock.sleep(750);
                     Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
                     myIntent.putExtra("asignatura", intent_asignatura);
                     myIntent.putExtra("intent_id", intent_id);

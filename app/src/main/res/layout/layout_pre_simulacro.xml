@@ -2,6 +2,7 @@
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/tools"
     android:background="#FFFFFF">
 
     <LinearLayout
@@ -42,10 +43,33 @@
             android:layout_height="wrap_content"
 
             android:gravity="center_horizontal"
-            android:textSize="18sp"
-            android:fontFamily="Arial"
-            android:text="Prueba"
+            android:textSize="16sp"
+            android:fontFamily="Roboto"
+            android:text="Número de preguntas"
             />
+        <!-- use Material.Widget.Slider.Discrete style for discrete mode https://github.com/rey5137/Material/wiki/Slider-->
+        <com.rey.material.widget.Slider
+            style="@style/Material.Widget.Slider.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:gravity="center_horizontal"
+            app:sl_discreteMode="true"
+            app:sl_textColor="FF696969"
+            app:sl_stepValue="20"
+            app:sl_minValue="10"
+            app:sl_maxValue="50"
+            />
+        <!--app:sl_secondaryColor="FF696969"
+        app:sl_discreteMode="true"
+        app:sl_stepValue="10"
+        app:sl_Value="40"
+        app:sl_minValue="10"
+        app:sl_maxValue="50"
+        />
+        app:sl_primaryColor="FF696969"-->
+
+
     </LinearLayout>
 
     <com.software.shell.fab.ActionButton
