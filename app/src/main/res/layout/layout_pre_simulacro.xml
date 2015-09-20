@@ -4,7 +4,11 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
     <include
         android:id="@+id/toolbar_main"
         layout="@layout/toolbar">
@@ -30,7 +34,19 @@
             android:layout_above="@id/layout_pre_simulacro_image"
         />
 
+
     </FrameLayout>
+        <TextView
+            android:id="@+id/show_string"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:fontFamily="Arial"
+            android:text="Prueba"
+            />
+    </LinearLayout>
 
     <com.software.shell.fab.ActionButton
         android:id="@+id/pre_simulacro_action_button"
