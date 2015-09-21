@@ -32,6 +32,9 @@ public class Main extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
+        //Añadir logo en drawable/logo y eliminar el texto del título
+        toolbar.setLogo(R.drawable.logo);
+        toolbar.setTitleTextColor(R.color.ColorPrimary);
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////
         //Añado el Drawer Layout
@@ -84,6 +87,7 @@ public class Main extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
         return true;
     }
 
