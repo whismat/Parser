@@ -27,8 +27,8 @@
             android:layout_height="180dp"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="16sp"
-            android:fontFamily="Arial"
+            android:textSize="18dp"
+            android:fontFamily="Roboto"
             android:padding="14dp"
             android:text="@string/enunciado"
         />
@@ -65,8 +65,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="18sp"
-            android:fontFamily="Arial"
+            android:textSize="16sp"
+            android:fontFamily="Roboto"
             android:text="Opcion1"
             />
 
@@ -76,8 +76,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="18sp"
-            android:fontFamily="Arial"
+            android:textSize="16sp"
+            android:fontFamily="Roboto"
             android:text="Opcion2"
             />
 
@@ -87,8 +87,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="18sp"
-            android:fontFamily="Arial"
+            android:textSize="16sp"
+            android:fontFamily="Roboto"
             android:text="Opcion3"
             />
 
@@ -98,8 +98,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="18sp"
-            android:fontFamily="Arial"
+            android:textSize="16sp"
+            android:fontFamily="Roboto"
             android:text="Opcion4"
             />
 
@@ -109,8 +109,8 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:layout_gravity="fill_horizontal"
-            android:textSize="18sp"
-            android:fontFamily="Arial"
+            android:textSize="16sp"
+            android:fontFamily="Roboto"
             android:text="Opcion5"
             />
         </LinearLayout>
