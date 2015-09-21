@@ -30,11 +30,11 @@ public class Main extends AppCompatActivity {
         setContentView(R.layout.layout_main);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
-        setSupportActionBar(toolbar);
 
         //Añadir logo en drawable/logo y eliminar el texto del título
         toolbar.setLogo(R.drawable.logo);
-        toolbar.setTitleTextColor(R.color.ColorPrimary);
+        toolbar.setTitle(R.string.hello_world);
+        setSupportActionBar(toolbar);
 
         /////////////////////////////////////////////////////////////////////////////////////////////////////
         //Añado el Drawer Layout
@@ -42,7 +42,6 @@ public class Main extends AppCompatActivity {
         mDrawerLayout_main = (DrawerLayout) findViewById(R.id.drawer_layout_main);
         mDrawerList_main = (ListView) findViewById(R.id.left_listview_main);
         mDrawerList_main.setAdapter(new ArrayAdapter<String>(this,R.layout.item_list_layout, asignaturas));
-
 
         mDrawerToggle_main = new ActionBarDrawerToggle(this,
                 mDrawerLayout_main,
@@ -79,8 +78,6 @@ public class Main extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
-
-
     }
 
     @Override
@@ -105,7 +102,4 @@ public class Main extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
 }

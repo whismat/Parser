@@ -9,12 +9,16 @@ import android.support.v4.app.NavUtils;
 import android.support.v4.content.IntentCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,6 +28,7 @@ import java.util.ArrayList;
 public class Simulacro_1 extends AppCompatActivity {
 
     private Toolbar toolbar;
+    private RelativeLayout lowestLayout;
     private ScrollView fondo_enunciado;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -349,6 +354,12 @@ public class Simulacro_1 extends AppCompatActivity {
         txtOpcion5.setText(opcion5string);
 
         //Listeners:
+
+        //Swipe
+
+        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(this);
+        lowestLayout = (RelativeLayout)this.findViewById(R.id.layout_simulacro);
+        lowestLayout.setOnTouchListener(activitySwipeDetector);
 
     }
     @Override
