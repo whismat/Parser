@@ -29,7 +29,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     public void onLeftSwipe(){
         Log.i(logTag, "LeftToRightSwipe!");
         Toast.makeText(activity, "Derecha", Toast.LENGTH_SHORT).show();
-        
+
     }
 
     public void onDownSwipe(){
