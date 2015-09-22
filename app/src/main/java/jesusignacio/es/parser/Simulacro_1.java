@@ -31,8 +31,8 @@ public class Simulacro_1 extends AppCompatActivity {
     private Toolbar toolbar;
     private RelativeLayout lowestLayout;
     private ScrollView fondo_enunciado;
-    private String[][] pregunta2 = new String[5][];
-    private String[][] pregunta = Arrays.copyOf(pregunta2, pregunta2.length, String[][].class);
+
+    //private String[][] pregunta = Arrays.copyOf(pregunta2, pregunta2.length, String[][].class);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,7 @@ public class Simulacro_1 extends AppCompatActivity {
         final int intent_id = myIntent.getIntExtra("intent_id", 0); // here 0 is the default value
         //final ArrayList simulacro = myIntent.getStringExtra("simulacro");
         ArrayList<String[][]> simulacro = (ArrayList<String[][]>) myIntent.getSerializableExtra("simulacro");
+
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
@@ -333,28 +334,30 @@ public class Simulacro_1 extends AppCompatActivity {
 
 
         //Crear String[][] Pregunta
-        pregunta = simulacro.get(0);
 
+        String[][] pregunta = new String[5][];
+        pregunta = simulacro.get(0);
+        Log.d("PEPE:", pregunta[0][1]);
 
         //A borrar:
-        String enunciadostring = pregunta[1][0];
-        String opcion1string = pregunta[2][0];
-        String opcion2string = pregunta[2][1];
-        String opcion3string = pregunta[2][2];
-        String opcion4string = pregunta[2][3];
-        String opcion5string = pregunta[2][4];
+        //String enunciadostring = pregunta[1][0];
+        //String opcion1string = pregunta[2][0];
+        //String opcion2string = pregunta[2][1];
+        //String opcion3string = pregunta[2][2];
+        //String opcion4string = pregunta[2][3];
+        //String opcion5string = pregunta[2][4];
 
-        txtEnunciado.setText(enunciadostring);
+        //txtEnunciado.setText(enunciadostring);
 
-        txtOpcion1.setText(opcion1string);
+        //txtOpcion1.setText(opcion1string);
 
-        txtOpcion2.setText(opcion2string);
+        //txtOpcion2.setText(opcion2string);
 
-        txtOpcion3.setText(opcion3string);
+        //txtOpcion3.setText(opcion3string);
 
-        txtOpcion4.setText(opcion4string);
+        //txtOpcion4.setText(opcion4string);
 
-        txtOpcion5.setText(opcion5string);
+        //txtOpcion5.setText(opcion5string);
 
         //Listeners:
 
