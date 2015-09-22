@@ -4,6 +4,7 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.NavUtils;
 import android.support.v4.content.IntentCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -14,6 +15,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+
+import java.lang.reflect.Array;
+import java.util.Random;
 
 import com.rey.material.widget.Slider;
 import com.software.shell.fab.ActionButton;
@@ -36,7 +40,7 @@ public class Pre_simulacro extends AppCompatActivity {
     private XmlPullParserFactory xmlFactoryObject;
     public static boolean parsingComplete = true;
 
-    public static ArrayList<ArrayList<String[]>> simulacro = new ArrayList<ArrayList<String[]>>();
+    private static ArrayList<String[][]> simulacro = new ArrayList<String[][]>();
 
     InputStream inputstream;
 
@@ -84,6 +88,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
         //Le cambio el color a la ActionBar y al ActionButton
 
+        {
         if(intent_id==1)
         {
             toolbar.setBackgroundColor(getResources().getColor(R.color.color_1));
@@ -353,43 +358,27 @@ public class Pre_simulacro extends AppCompatActivity {
 
             inputstream = getResources().openRawResource(R.raw.sample);
         }
-
+        }
         try {
-           readXML();
+            //Borrar todo el contenido del Arraylist simulacro
+            simulacro.clear();
+            readXML();
+            Log.i("EIR-App totalpreguntas:", Integer.toString(simulacro.size()));
 
         } catch (XmlPullParserException e) {
             e.printStackTrace();
         }
 
-        //Pruebas
-        //Crear un array
-        //iterate on the general list
-        //for(int i = 0 ; i < simulacro.size() ; i++) {
-         //   ArrayList<String[]> currentList = simulacro.get(i);
-            //now iterate on the current list
-           // for (int j = 0; j < currentList.size(); j++) {
-             //   String[] currentList2 = currentList.get(j);
-               // for (int k = 0; k < currentList2.size() )
-                //;
-           // }
-       // }
-
-
-        TextView showstring = (TextView)findViewById(R.id.show_string);
-        //showstring.setText(simulacro.toString());
-
-        //Crear el OnClickListener para cargar el XML con la función readXML y pasar a Simulacro_1 mediante intent
+        //Crear el OnClickListener para pasar simulacro1 a Simulacro_1 mediante intent
         actionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                    SystemClock.sleep(750);
+                    SystemClock.sleep(500);
                     Intent myIntent = new Intent(Pre_simulacro.this, Simulacro_1.class);
                     myIntent.putExtra("asignatura", intent_asignatura);
                     myIntent.putExtra("intent_id", intent_id);
-                    //myIntent.putStringArrayListExtra("simulacro", simulacro);
-                    actionButton.playHideAnimation();
-
+                    myIntent.putExtra("simulacro", simulacro);
                     startActivity(myIntent);
 
             }
@@ -419,8 +408,10 @@ public class Pre_simulacro extends AppCompatActivity {
         String text = null;
         int i_respuesta = 0;
 
-        ArrayList<String[]> bloque = new ArrayList<String[]>();
+        //ArrayList<String[]> bloque = new ArrayList<String[]>();
+        String[][] pregunta = new String[5][];
         String[] opciones = new String[5];
+
 
         try {
             event = parser.getEventType();
@@ -444,8 +435,8 @@ public class Pre_simulacro extends AppCompatActivity {
                             String[] code = new String[1];
                             Log.i("EIR-App code", text);
                             code[0] = text;
-
-                            bloque.add(code);
+                            pregunta[0] = code;
+                            //bloque.add(code);
                         }
 
                         else if (name.equals("enunciado")) {
@@ -453,8 +444,9 @@ public class Pre_simulacro extends AppCompatActivity {
                             String[] enunciado = new String[1];
                             Log.i("EIR-App enunciado", text);
                             enunciado[0] = text;
+                            pregunta[1] = enunciado;
 
-                            bloque.add(enunciado);
+                            //bloque.add(enunciado);
                         }
 
                         else if (name.equals("opcion")) {
@@ -491,27 +483,32 @@ public class Pre_simulacro extends AppCompatActivity {
 
                                 opciones[4] = text;
                                 Log.i("EIR-App opcion5", text);
+                                pregunta[2] = opciones;
                                 
                             }
                         }
-                        else if (name.equals("respuesta")) {
-                            String[] respuesta = new String[1];
-                            Log.i("EIR-App respuesta", text);
-                            respuesta[0] = text;
-                            String[] resultado = new String[1];
-                            resultado[0] = "0";
+                        else {
+                            if (name.equals("respuesta")) {
+                                String[] respuesta = new String[1];
+                                Log.i("EIR-App respuesta", text);
+                                respuesta[0] = text;
+                                String[] resultado = new String[1];
+                                resultado[0] = "0";
 
-                            bloque.add(opciones);
-                            bloque.add(respuesta);
-                            bloque.add(resultado);
+                                //bloque.add(opciones);
+                                //bloque.add(respuesta);
+                                //bloque.add(resultado);
+                                pregunta[3] = respuesta;
+                                pregunta[4] = resultado;
 
-                        }
-                        else if (name.equals("pregunta")) {
-                            i_respuesta = 0;
-                            simulacro.add(bloque);
+                            } else if (name.equals("pregunta")) {
+                                i_respuesta = 0;
+                                simulacro.add(pregunta);
+                            }
                         }
 
                         break;
+
                 }
                 event = parser.next();
             }

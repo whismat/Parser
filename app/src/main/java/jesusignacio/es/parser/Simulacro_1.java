@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by jesusignacio on 30/06/15.
@@ -30,6 +31,9 @@ public class Simulacro_1 extends AppCompatActivity {
     private Toolbar toolbar;
     private RelativeLayout lowestLayout;
     private ScrollView fondo_enunciado;
+    private String[][] pregunta2 = new String[5][];
+    private String[][] pregunta = Arrays.copyOf(pregunta2, pregunta2.length, String[][].class);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -38,9 +42,10 @@ public class Simulacro_1 extends AppCompatActivity {
 
         Intent myIntent = getIntent(); // gets the previously created intent
 
-        final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
+        final String intent_asignatura = myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
         final int intent_id = myIntent.getIntExtra("intent_id", 0); // here 0 is the default value
-        //final String enunciadostring = myIntent.getStringExtra("simulacrostring");
+        //final ArrayList simulacro = myIntent.getStringExtra("simulacro");
+        ArrayList<String[][]> simulacro = (ArrayList<String[][]>) myIntent.getSerializableExtra("simulacro");
 
         toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitle(intent_asignatura);
@@ -57,6 +62,9 @@ public class Simulacro_1 extends AppCompatActivity {
         TextView txtOpcion4 = (TextView)findViewById(R.id.show_opcion4);
         TextView txtOpcion5 = (TextView)findViewById(R.id.show_opcion5);
 
+
+        Log.i("Intent!:", Integer.toString(simulacro.size()));
+
         toolbar.setNavigationOnClickListener(new View.OnClickListener()
 
                                              {
@@ -67,7 +75,6 @@ public class Simulacro_1 extends AppCompatActivity {
                                              }
 
         );
-
 
         txtOpcion1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -323,34 +330,30 @@ public class Simulacro_1 extends AppCompatActivity {
 
         ////////////////////////////////////////////////////////////////////////////////////////////////
         //Añadir elementos
-        //ArrayList Simulacro
-        ArrayList<ArrayList<String[]>> simulacro = new ArrayList<ArrayList<String[]>>();
-        //ArrayList Bloque
-        ArrayList<String[]> bloque = new ArrayList<String[]>();
-        //bloque = simulacro.get(0);
-        //String[] opciones = new String[5];
-        //Code
-        //String code = bloque.get(0).toString();
-        //Enunciado
-        //String enunciado = bloque.get(1).toString();
-        //String[] Opciones
-        //String opciones = bloque.get(0).toString();
-        //Resultado
-        //String resultado = bloque.get(0).toString();
+
+
+        //Crear String[][] Pregunta
+        pregunta = simulacro.get(0);
+
 
         //A borrar:
-        String enunciadostring = "La etapa del proceso de mitosis, el momento en que las dos cromátidas se marchan a polos opuestos del núcleo duplicando con ellos el número de cromosomas es: ";
-        String opcion1string = "Profase";
-        String opcion2string = "Metafase";
-        String opcion3string = "Alofase";
-        String opcion4string = "Telofase";
-        String opcion5string = "Intefase";
+        String enunciadostring = pregunta[1][0];
+        String opcion1string = pregunta[2][0];
+        String opcion2string = pregunta[2][1];
+        String opcion3string = pregunta[2][2];
+        String opcion4string = pregunta[2][3];
+        String opcion5string = pregunta[2][4];
 
         txtEnunciado.setText(enunciadostring);
+
         txtOpcion1.setText(opcion1string);
+
         txtOpcion2.setText(opcion2string);
+
         txtOpcion3.setText(opcion3string);
+
         txtOpcion4.setText(opcion4string);
+
         txtOpcion5.setText(opcion5string);
 
         //Listeners:
@@ -362,6 +365,9 @@ public class Simulacro_1 extends AppCompatActivity {
         lowestLayout.setOnTouchListener(activitySwipeDetector);
 
     }
+
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Crear el menu y añadir los elementos.
