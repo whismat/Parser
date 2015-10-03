@@ -336,8 +336,8 @@ public class Simulacro_1 extends AppCompatActivity {
         //Crear String[][] Pregunta
 
         String[][] pregunta = new String[5][];
-        pregunta = simulacro.get(0);
-        Log.d("PEPE:", pregunta[0][1]);
+        //pregunta = simulacro.get(0);
+        //Log.d("PEPE:", pregunta[0][1]);
 
         //A borrar:
         //String enunciadostring = pregunta[1][0];

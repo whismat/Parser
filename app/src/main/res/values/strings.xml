@@ -7,6 +7,38 @@
     <string name="drawer_open">Navigation Abierta</string>
     <string name="drawer_close">Navigation Cerrada</string>
 
+    <string name="asignatura_1">Anatomofisiología</string>
+    <string name="asignatura_2">Bioética y legislación</string>
+    <string name="asignatura_3">Bioquímica</string>
+    <string name="asignatura_4">Enfermería del trabajo</string>
+    <string name="asignatura_5">Geriatría</string>
+    <string name="asignatura_6">Enfermería maternal</string>
+    <string name="asignatura_7">Enfermería pediátrica</string>
+    <string name="asignatura_8">Administración</string>
+    <string name="asignatura_9">Nutrición y dietética</string>
+    <string name="asignatura_10">Aparato respiratorio</string>
+    <string name="asignatura_11">Equilibrio hidroelectrolítico</string>
+    <string name="asignatura_12">Endocrinología y metabolismo</string>
+    <string name="asignatura_13">Nefrología y urología</string>
+    <string name="asignatura_14">Sistema digestivo</string>
+    <string name="asignatura_15">Sistema musculoesquelético</string>
+    <string name="asignatura_16">Sistema neurosensorial</string>
+    <string name="asignatura_17">Oncohematología</string>
+    <string name="asignatura_18">Piel</string>
+    <string name="asignatura_19">Sistema cardiovascular</string>
+    <string name="asignatura_20">Enfermería psiquiátrica</string>
+    <string name="asignatura_21">Enfermería psicosocial</string>
+    <string name="asignatura_22">Farmacología</string>
+    <string name="asignatura_23">Historia de la enfermería</string>
+    <string name="asignatura_24">Fundamentos de enfermería</string>
+    <string name="asignatura_25">Proceso asistencial de enfermería</string>
+    <string name="asignatura_26">Procedimientos y técnicas</string>
+    <string name="asignatura_27">Salud pública y comunitaria</string>
+
+
+
+
+
     <string-array name="asignaturas">
         <item>Anatomofisiología</item>
         <item>Bioética y legislación</item>

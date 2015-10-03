@@ -54,7 +54,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
         //Capturar las variables del intent
         Intent myIntent = getIntent(); // gets the previously created intent
-        final int intent_id = myIntent.getIntExtra("id", 0) + 1; // Le sumo 1 porque el primer elemento de la lista devuelve 0, y no 1
+        final int intent_id = myIntent.getIntExtra("id", 0);
         final String intent_asignatura= myIntent.getStringExtra("asignatura"); // will return "SecondKeyValue"
 
         //Crear y cambiar el título a la Toolbar
@@ -65,8 +65,7 @@ public class Pre_simulacro extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().
-                setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Listener para volver atrás
         toolbar.setNavigationOnClickListener(new View.OnClickListener()
@@ -75,6 +74,7 @@ public class Pre_simulacro extends AppCompatActivity {
                                                  @Override
                                                  public void onClick(View view) {
                                                      NavUtils.navigateUpTo(Pre_simulacro.this, IntentCompat.makeMainActivity(new ComponentName(Pre_simulacro.this, Pre_simulacro.class)));
+                                                     //startActivity(new Intent(Pre_simulacro.this, Main.class));
                                                  }
                                              }
 

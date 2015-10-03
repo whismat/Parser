@@ -68,7 +68,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
-        fab:image="@drawable/plus"
+        fab:image="@drawable/fordward"
 
         />
 
