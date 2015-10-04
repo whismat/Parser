@@ -19,10 +19,6 @@ import android.widget.ListView;
 public class Main extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
 
 
-    private String[] asignaturas;
-    private ActionBarDrawerToggle mDrawerToggle_main;
-    private DrawerLayout mDrawerLayout_main;
-    private ListView mDrawerList_main;
     private Toolbar toolbar;
     private DrawerLayout drawerLayout;
     NavigationView navigationView;

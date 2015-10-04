@@ -40,10 +40,9 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-
         app:itemTextColor="@color/fab_material_grey_900"
         app:menu="@menu/navigationdraweritems"
-
         />
 
-</android.support.v4.widget.DrawerLayout>
+    </android.support.v4.widget.DrawerLayout>
+

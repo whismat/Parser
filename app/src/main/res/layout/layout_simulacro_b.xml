@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_simulacro">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_main"
+        android:background="?attr/colorPrimary"
+        android:scrollbars="horizontal"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"/>
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar">
+    </include>
+
+    <RelativeLayout android:id="@+id/textAreaScrollercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_main"
+        android:orientation="vertical">
+
+        <ScrollView android:id="@+id/textAreaScroller"
+            android:layout_width="fill_parent"
+            android:layout_height="173dp"
+            android:scrollbars="vertical"
+            >
+
+        <TextView
+            android:id="@+id/show_enunciado"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="18dp"
+            android:fontFamily="Roboto"
+            android:textColor="#dcdcdc"
+            android:padding="14dp"
+            android:text="@string/enunciado"
+        />
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:orientation="vertical"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/toolbar_shadow"
+            />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAreaScrollercontainer"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/toolbar_shadow"
+                android:layout_alignParentTop="true"
+                />
+        <TextView
+            android:id="@+id/show_opcion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="16dp"
+            android:fontFamily="Roboto"
+            android:text="Opcion1"
+            />
+
+        <TextView
+            android:id="@+id/show_opcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="16dp"
+            android:fontFamily="Roboto"
+            android:text="Opcion2"
+            />
+
+        <TextView
+            android:id="@+id/show_opcion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="16dp"
+            android:fontFamily="Roboto"
+            android:text="Opcion3"
+            />
+
+        <TextView
+            android:id="@+id/show_opcion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="16dp"
+            android:fontFamily="Roboto"
+            android:text="Opcion4"
+            />
+
+        <TextView
+            android:id="@+id/show_opcion5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="fill_horizontal"
+            android:textSize="16dp"
+            android:fontFamily="Roboto"
+            android:text="Opcion5"
+            />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="vertical"
+        android:background="#000"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="#000"
+        />
+
+    </LinearLayout>
+
+    </RelativeLayout>
