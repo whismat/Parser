@@ -25,14 +25,13 @@
             android:layout_height="fill_parent"
             android:id="@+id/layout_pre_simulacro_image"
             android:scaleType="fitStart"
-            android:src="@drawable/img21"
-            />
+            android:src="@drawable/img21"  />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:background="@drawable/toolbar_shadow"
-            android:layout_above="@id/layout_pre_simulacro_image"
-        />
+            android:layout_above="@id/layout_pre_simulacro_image"  />
 
 
     </FrameLayout>
@@ -44,8 +43,8 @@
             android:gravity="center_horizontal"
             android:textSize="16sp"
             android:fontFamily="Roboto"
-            android:text="Número de preguntas"
-            />
+            android:text="Número de preguntas"  />
+
         <!-- use Material.Widget.Slider.Discrete style for discrete mode https://github.com/rey5137/Material/wiki/Slider-->
         <com.rey.material.widget.Slider
             style="@style/Slider"
@@ -54,8 +53,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="60dp"
             android:paddingRight="60dp"
-            android:gravity="center_horizontal"
-            />
+            android:gravity="center_horizontal" />
 
     </LinearLayout>
 
@@ -67,9 +65,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="@dimen/fab_margin"
         android:layout_marginBottom="@dimen/fab_margin"
-        fab:image="@drawable/fordward"
-
-        />
+        fab:image="@drawable/fab_plus_icon" />
 
 </RelativeLayout>
 
