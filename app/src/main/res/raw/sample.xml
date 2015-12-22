@@ -1,3 +1,14 @@
+<examen>
+<pregunta>
+      <code>5698</code>
+      <enunciado>¿Cual de los siguientes pares de bases NO forma parte de la molécula de ADN?</enunciado>
+      <opcion>Guanina-citosina </opcion>
+      <opcion>Adenina-timina </opcion>
+      <opcion>Adenina-uracilo</opcion>
+      <opcion>Timina-Adenina</opcion>
+      <opcion>Citosina-Guanina</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
 <pregunta>
       <code>5699</code>
       <enunciado>Uno de los siguiente orgánulos celulares genera ATP mediante procesos de respiración aeróbica:</enunciado>
@@ -28,3 +39,234 @@
       <opcion>En edades avanzadas se atrofia totalmente, dejando de hacer su función. </opcion>
       <respuesta>4</respuesta>
 </pregunta>
+<pregunta>
+      <code>5702</code>
+      <enunciado>El sistema complemento del plasma es: </enunciado>
+      <opcion>El efecto de multiplicación de Ig por parte de loslinfocitos B.</opcion>
+      <opcion>La acción de los macrófagos que ayudan a los nitrófilos. </opcion>
+      <opcion>Un sistema de fibrina que tabica la infección adfasdf asdf asdfasdfas dfasd fasd fas dfas dfas dfa sdfsadf</opcion>
+      <opcion>Un sistema defensivo elaborado por los neutrófilos</opcion>
+      <opcion>Una serie de 20 proteínas inactivas que ante unareacción Ag-Ac actúan provocando una citolisis.</opcion>
+      <respuesta>5</respuesta>
+</pregunta>
+<pregunta>
+      <code>5703</code>
+      <enunciado>Uno de los siguientes elementos NO es un factor decoagulación:</enunciado>
+      <opcion>Vitamina K.</opcion>
+      <opcion>Prueba</opcion>
+      <opcion>Trombina.</opcion>
+      <opcion>Tromboxano</opcion>
+      <opcion>Fibrinógeno.</opcion>
+      <respuesta>4</respuesta>
+</pregunta>
+<pregunta>
+      <code>5704</code>
+      <enunciado>Un paciente con sangre del grupo Rh+, ¿puede recibirsangre de otro del grupo Rh-?</enunciado>
+      <opcion>No, nunca.</opcion>
+      <opcion>Sí, siempre.</opcion>
+      <opcion>Sólo si recibe suero antiRh posteriormente</opcion>
+      <opcion>No si está embarazada</opcion>
+      <opcion>Solo si es del grupo 0.</opcion>
+      <respuesta>2</respuesta>
+</pregunta>
+<pregunta>
+      <code>6999</code>
+      <enunciado>Uno de los siguientes procesos NO es un mecanismo de transporte:</enunciado>
+      <opcion>Díalisis</opcion>
+      <opcion>Ósmosis</opcion>
+      <opcion>Desmosoma</opcion>
+      <opcion>Fagocitosis</opcion>
+      <opcion>Exocitosis</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>7131</code>
+      <enunciado>Señala la respuesta INCORRECTA:</enunciado>
+      <opcion>La interfase es la fase de crecimiento</opcion>
+      <opcion>La mitosis se divide en 4 fases</opcion>
+      <opcion>En la anafase los cromosomas se sitúan en el centro celular o placa ecuatoria</opcion>
+      <opcion>La meiosis es el mecanismo de división celular que utiliza las células germinales</opcion>
+      <opcion>El genoma es la dotación fija de ADN que poseen las células en su núcleo</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>7164</code>
+      <enunciado>El endometrio es una de las capas del:</enunciado>
+      <opcion>Bolsas escrotales.</opcion>
+      <opcion>Útero.</opcion>
+      <opcion>Testículos</opcion>
+      <opcion>Ovario.</opcion>
+      <opcion>Vagina.</opcion>
+      <respuesta>2</respuesta>
+</pregunta>
+<pregunta>
+      <code>6960</code>
+      <enunciado>La glucólisis tiene lugar en:</enunciado>
+      <opcion>Citoplasma en anaerobios</opcion>
+      <opcion>Citoplasma en aerobios</opcion>
+      <opcion>Mitocondrias en anaerobios</opcion>
+      <opcion>Mitocondrias en aerobios</opcion>
+      <opcion>Lisosomas</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>9606</code>
+      <enunciado>Las células pigmentarias se llaman así porque tienen en su citoplasma:</enunciado>
+      <opcion>Pigmentos vegetales</opcion>
+      <opcion>Pigmento férrico</opcion>
+      <opcion>Melanina</opcion>
+      <opcion>Histamina</opcion>
+      <opcion>Fosfatasa pigmentaria</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>9607</code>
+      <enunciado>El núcleo de la célula suele estar situado en el centro del citoplasma en el caso de:</enunciado>
+      <opcion>Células adiposas del tejido adiposo pardo</opcion>
+      <opcion>Células plasmáticas</opcion>
+      <opcion>Células del tejido adiposo blanco</opcion>
+      <opcion>Todas las respuestas anteriores son correctas</opcion>
+      <opcion>Ninguna respuesta es correcta</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>9608</code>
+      <enunciado>Los monocitos, en el seno de los tejidos, se pueden transformar en:</enunciado>
+      <opcion>Células adiposas</opcion>
+      <opcion>Células plasmáticas</opcion>
+      <opcion>Macrófagos</opcion>
+      <opcion>Neuronas</opcion>
+      <opcion>Células musculares</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>9622</code>
+      <enunciado>Entre las células epiteliales con cilios, tenemos las propias de:</enunciado>
+      <opcion>Epitelio de la tráquea</opcion>
+      <opcion>Epitelio ependimario</opcion>
+      <opcion>Epitelio del intestino delgado</opcion>
+      <opcion>Todas las respuestas anteriores son correctas</opcion>
+      <opcion>Sólo las dos primeras respuestas son correctas</opcion>
+      <respuesta>5</respuesta>
+</pregunta>
+<pregunta>
+      <code>9623</code>
+      <enunciado>El epitelio de la piel se considera como:</enunciado>
+      <opcion>Plano o pavimentoso poliestratificado</opcion>
+      <opcion>Simple monoestratificado</opcion>
+      <opcion>Seudoestratificado</opcion>
+      <opcion>Transicional</opcion>
+      <opcion>Cilíndrico poliestratificado</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>9889</code>
+      <enunciado>Es el período que trascurre entre el fin de una mitosis y el inicio de la síntesis de ADN.</enunciado>
+      <opcion>Fase G1</opcion>
+      <opcion>Fase S</opcion>
+      <opcion>Fase G2</opcion>
+      <opcion>Fase M</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>9890</code>
+      <enunciado>Es la primera fase del ciclo celular, en la que existe crecimiento celular con síntesis de proteínas y de ARN.</enunciado>
+      <opcion>Fase G1</opcion>
+      <opcion>Fase S</opcion>
+      <opcion>Fase G2</opcion>
+      <opcion>Fase M</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>9891</code>
+      <enunciado>Es la segunda fase del ciclo, en la que se produce la replicación o síntesis del ADN, como resultado cada cromosoma se duplica y queda formado por dos cromátidas idénticas.</enunciado>
+      <opcion>Fase G1</opcion>
+      <opcion>Fase S</opcion>
+      <opcion>Fase G2</opcion>
+      <opcion>Fase M</opcion>
+      <respuesta>2</respuesta>
+</pregunta>
+<pregunta>
+      <code>9892</code>
+      <enunciado>Es la tercera fase de crecimiento del ciclo celular en la que continúa la síntesis de proteínas y ARN. Al final de este período se observa al microscopio cambios en la estructura celular, que indican el principio de la división celular.</enunciado>
+      <opcion>Fase G1</opcion>
+      <opcion>Fase S</opcion>
+      <opcion>Fase G2</opcion>
+      <opcion>Fase M</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>9893</code>
+      <enunciado>Es la división celular en la que una célula progenitora (células eucariotas, células somáticas -células comunes del cuerpo-) se divide en dos células hijas idénticas</enunciado>
+      <opcion>Fase G1</opcion>
+      <opcion>Fase S</opcion>
+      <opcion>Fase G2</opcion>
+      <opcion>Fase M</opcion>
+      <respuesta>4</respuesta>
+</pregunta>
+<pregunta>
+      <code>7340</code>
+      <enunciado>¿Cuál de la siguientes NO es una organela citoplasmática?:</enunciado>
+      <opcion>Lisosoma</opcion>
+      <opcion>Ribosoma</opcion>
+      <opcion>Centrómero</opcion>
+      <opcion>Retículo endoplasmático granular</opcion>
+      <opcion>Mitocondria</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>12472</code>
+      <enunciado>Identifique las fases de la mitosis</enunciado>
+      <opcion>Interfase, profase, anafase y telofase.</opcion>
+      <opcion>Profase, metafase, anafase y telofase.</opcion>
+      <opcion>Cariocinesis, metafase, anafase y telofase.</opcion>
+      <opcion>Interfase y citocinesis.</opcion>
+      <respuesta>2</respuesta>
+</pregunta>
+<pregunta>
+      <code>12473</code>
+      <enunciado>La localización preferente de los carbohidratos en la membrana plasmática es:</enunciado>
+      <opcion>En la membrana plasmática no existen carbohidratos.</opcion>
+      <opcion>La superficie citoplasmática solamente.</opcion>
+      <opcion>En ambas caras de la membrana.</opcion>
+      <opcion>La superficie extracelular solamente.</opcion>
+      <respuesta>4</respuesta>
+</pregunta>
+<pregunta>
+      <code>12474</code>
+      <enunciado>¿Cómo se denomina a la forma de endocitosis por medio de la cual la célula engloba una pequeña parte de líquido extracelular con sustancias disueltas, pero sin partículas?</enunciado>
+      <opcion>Amebiosis.</opcion>
+      <opcion>Fagocitosis.</opcion>
+      <opcion>Pinocitosis</opcion>
+      <opcion>Digestión</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>12475</code>
+      <enunciado>¿Cuál es la función principal de los lisosomas</enunciado>
+      <opcion>La digestión celular.</opcion>
+      <opcion>La síntesis de colesterol.</opcion>
+      <opcion>La hidroxilación de azúcares.</opcion>
+      <opcion>La síntesis de proteínas.</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>12477</code>
+      <enunciado>Indique la estructura asociada a la troponina y a la tropomiosina en el tejido muscular:</enunciado>
+      <opcion>Filamentos intermedios.</opcion>
+      <opcion>Filamentos de miosina.</opcion>
+      <opcion>Filamentos de actina.</opcion>
+      <opcion>Microtúbulos.</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>12483</code>
+      <enunciado>El tubo neural se forma a expensas del:</enunciado>
+      <opcion>Mesénquima</opcion>
+      <opcion>Mesodermo</opcion>
+      <opcion>Endodermo</opcion>
+      <opcion>Ectodermo</opcion>
+      <respuesta>4</respuesta>
+      <no_barajar>1</no_barajar>
+</pregunta>
+</examen>

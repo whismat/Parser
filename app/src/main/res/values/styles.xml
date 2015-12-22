@@ -20,7 +20,7 @@
         <item name="sl_secondaryColor">#fbb9b9b9</item>
         <item name="sl_maxValue">50</item>
         <item name="sl_stepValue">10</item>
-        <item name="sl_value">40</item>
+        <item name="sl_value">10</item>
         <item name="sl_discreteMode">true</item>
         <item name="sl_textSize">@dimen/abc_text_size_small_material</item>
         <item name="sl_textColor">#FFFFFFFF</item>

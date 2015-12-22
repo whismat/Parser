@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<examen>
 <pregunta>
       <code>5698</code>
       <enunciado>¿Cual de los siguientes pares de bases NO forma parte de la molécula de ADN?</enunciado>
@@ -51,7 +51,7 @@
 </pregunta>
 <pregunta>
       <code>5703</code>
-      <enunciado>Uno de los siguientes elementos NO es un factor decoagulación:</enunciado>
+      <enunciado>Uno de los siguientes elementos NO es un factor de coagulación:</enunciado>
       <opcion>Vitamina K.</opcion>
       <opcion>Prueba</opcion>
       <opcion>Trombina.</opcion>
@@ -328,7 +328,7 @@
 </pregunta>
 <pregunta>
       <code>12480</code>
-      <enunciado>¿Dónde tiene lugar la hemocateresis</enunciado>
+      <enunciado>¿Dónde tiene lugar la hemocateresis?</enunciado>
       <opcion>Hígado.</opcion>
       <opcion>Médula ósea.</opcion>
       <opcion>Bazo</opcion>
@@ -373,7 +373,7 @@
 </pregunta>
 <pregunta>
       <code>12489</code>
-      <enunciado>¿Cuál es la principal vena superficial de la pierna</enunciado>
+      <enunciado>¿Cuál es la principal vena superficial de la pierna?</enunciado>
       <opcion>Safena externa.</opcion>
       <opcion>Safena interna</opcion>
       <opcion>Femoral externa.</opcion>
@@ -930,7 +930,7 @@
       <opcion>En silla de montar.</opcion>
       <respuesta>6</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>299</code>
       <enunciado>Respecto a las diartrosis óseas, señale cuál de las siguientes tipos es uniaxial (un eje):</enunciado>
       <opcion>Tróclea</opcion>
@@ -940,8 +940,8 @@
       <opcion>Enartrosis</opcion>
       <opcion>Artrodias</opcion>
       <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
+</pregunta-arreglar>
+<pregunta-arreglar>
       <code>300</code>
       <enunciado>Respecto a las diartrosis óseas, señale cuales de los siguientes tipos es biaxial (dos ejes)</enunciado>
       <opcion>Tróclea</opcion>
@@ -951,8 +951,8 @@
       <opcion>Enartrosis</opcion>
       <opcion>Artrodias</opcion>
       <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
+</pregunta-arreglar>
+<pregunta-arreglar>
       <code>301</code>
       <enunciado>Respecto a las diartrosis óseas, señale cuales de los siguientes tipos es multiaxial (muchos ejes)</enunciado>
       <opcion>Tróclea</opcion>
@@ -962,7 +962,7 @@
       <opcion>Enartrosis</opcion>
       <opcion>Artrodias</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>302</code>
       <enunciado>El plano que divide al cuerpo en dos partes iguales es el plano:</enunciado>
@@ -1104,7 +1104,7 @@
 </pregunta>
 <pregunta>
       <code>319</code>
-      <enunciado>Hay X costillas falsas;</enunciado>
+      <enunciado>¿Cuántos pares de costillas falsas existen?</enunciado>
       <opcion>3</opcion>
       <opcion>2</opcion>
       <opcion>4</opcion>
@@ -1145,7 +1145,7 @@
 </pregunta>
 <pregunta>
       <code>324</code>
-      <enunciado>Las fibras rojas son las del tipo:</enunciado>
+      <enunciado>Las fibras rojas musculares son las del tipo:</enunciado>
       <opcion>I</opcion>
       <opcion>II</opcion>
       <opcion>III</opcion>
@@ -1210,8 +1210,9 @@
       <opcion>Debe sintetizarse a ese nivel y normalmente almacenarse en vesículas</opcion>
       <opcion>Ha de liberarse or un potencial de acción calciodependiente mediante exocitosis para una actividad específica de esa neurona.</opcion>
       <opcion>Activará a un receptor en la terminación postsináptica produciendo siempre el mismo efecto, aunque algunos receptores están localizados a nivel preisnáptico.</opcion>
-      <opcion>La inactivación del neurotransmisor se produce bien por reabsorción o bien por degradación química mediante enzimas.</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Todas son correctas.</opcion>
+      <no_barajar>1</no_barajar>
+      <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
       <code>350</code>
@@ -1226,18 +1227,18 @@
       <opcion>B-endorfinas</opcion>
       <opcion>Metencefalina</opcion>
       <opcion>Leuencefalina</opcion>
-      <opcion>Dinorfinas</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Todas son correctas</opcion>
+      <respuesta>11</respuesta>
 </pregunta>
 <pregunta>
       <code>1630</code>
-      <enunciado>Cada hemisferio cerebral está formado por los siguientes lóbulos:</enunciado>
+      <enunciado>Uno de los siguientes no es un lóbulo cerebral:</enunciado>
       <opcion>Frontal</opcion>
       <opcion>Anterotemporal</opcion>
       <opcion>Parietal</opcion>
       <opcion>Lóbulo de la ínsula de Reil</opcion>
-      <opcion>Occipital</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Temporal</opcion>
+      <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
       <code>351</code>
@@ -1251,13 +1252,14 @@
 </pregunta>
 <pregunta>
       <code>1631</code>
-      <enunciado>La cisura de Rolando separa:</enunciado>
-      <opcion>Frontal</opcion>
-      <opcion>Anterotemporal</opcion>
-      <opcion>Parietal</opcion>
-      <opcion>Lóbulo de la ínsula de Reil</opcion>
-      <opcion>Occipital</opcion>
-      <respuesta>0</respuesta>
+      <enunciado>La cisura de Rolando separa los lóbulos:</enunciado>
+      <opcion>Frontal y temporal</opcion>
+      <opcion>Frontal y parietal</opcion>
+      <opcion>Parietal y occipital</opcion>
+      <opcion>Ninguna de las anteriores es correcta</opcion>
+      <opcion>Occipital y frontal</opcion>
+      <no_barajar>1</no_barajar>
+      <respuesta>2</respuesta>
 </pregunta>
 <pregunta>
       <code>352</code>
@@ -1272,12 +1274,22 @@
 <pregunta>
       <code>1632</code>
       <enunciado>La cisura de Silvio separa:</enunciado>
-      <opcion>Frontal</opcion>
-      <opcion>Anterotemporal</opcion>
-      <opcion>Parietal</opcion>
-      <opcion>Lóbulo de la ínsula de Reil</opcion>
-      <opcion>Occipital</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Frontal y temporal</opcion>
+      <opcion>Frontal y parietal</opcion>
+      <opcion>Parietal y occipital</opcion>
+      <opcion>Ninguna de las anteriores es correcta</opcion>
+      <opcion>Occipital y frontal</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>16321</code>
+      <enunciado>La cisura de Silvio:</enunciado>
+      <opcion>Separa los lóbulos frontal y parietal</opcion>
+      <opcion>Es más larga en el hemisferio izquierdo del cerebro</opcion>
+      <opcion>Separa los lóbulos parietal y occipital</opcion>
+      <opcion>Ninguna de las anteriores es correcta</opcion>
+      <opcion>Separa los lóbulos occipital y frontal</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>353</code>
@@ -1294,7 +1306,10 @@
       <enunciado>Entre las funciones de los testículos se encuentran:</enunciado>
       <opcion>Producción de espermatozoides</opcion>
       <opcion>Secreción de las hormonas sexuales masculinas</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Ambas respuestas son correctas</opcion>
+      <opcion>Ninguna de las respuestas es correcta</opcion>
+      <no_barajar></no_barajar>
+      <respuesta>3</respuesta>
 </pregunta>
 <pregunta>
       <code>354</code>
@@ -1337,10 +1352,11 @@
 <pregunta>
       <code>357</code>
       <enunciado>El espacio subaracnoideo, donde se encuentra el líquido cefalorraquídeo, se encuentra entre:</enunciado>
-      <opcion>Duramadre</opcion>
-      <opcion>Aracnoides</opcion>
-      <opcion>Piamadre</opcion>
-      <respuesta>0</respuesta>
+      <opcion>La duramadre y el aracnoides</opcion>
+      <opcion>La aracnoides y la piamadre</opcion>
+      <opcion>La duramadre y la piamadre</opcion>
+      <opcion>Ninguna es correcta</opcion>
+      <respuesta>2</respuesta>
 </pregunta>
 <pregunta>
       <code>1637</code>
@@ -1355,10 +1371,11 @@
 <pregunta>
       <code>358</code>
       <enunciado>El espacio subdural, donde se encuentra el se encuentra entre:</enunciado>
-      <opcion>Duramadre</opcion>
-      <opcion>Aracnoides</opcion>
-      <opcion>Piamadre</opcion>
-      <respuesta>0</respuesta>
+      <opcion>La duramadre y el aracnoides</opcion>
+      <opcion>La aracnoides y la piamadre</opcion>
+      <opcion>La duramadre y la piamadre</opcion>
+      <opcion>Ninguna es correcta</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>1638</code>
@@ -1373,10 +1390,21 @@
 <pregunta>
       <code>359</code>
       <enunciado>El espacio epidural subdural del canal raquídeo (SNC) se encuentra entre:</enunciado>
-      <opcion>Duramadre</opcion>
-      <opcion>Aracnoides</opcion>
-      <opcion>Piamadre</opcion>
-      <respuesta>0</respuesta>
+     <opcion>La duramadre y el aracnoides</opcion>
+      <opcion>La aracnoides y la piamadre</opcion>
+      <opcion>La duramadre y la piamadre</opcion>
+      <opcion>Ninguna es correcta</opcion>
+      <respuesta>4</respuesta>
+</pregunta>
+<pregunta>
+      <code>3591</code>
+      <enunciado>El espacio epidural subdural del canal raquídeo (SNC) se encuentra entre:</enunciado>
+     <opcion>La duramadre y el aracnoides</opcion>
+      <opcion>La aracnoides y la piamadre</opcion>
+      <opcion>La duramadre y la piamadre</opcion>
+      <opcion>Bajo la duramadre</opcion>      
+      <opcion>Ninguna es correcta</opcion>
+      <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
       <code>1639</code>
@@ -1572,19 +1600,23 @@
 </pregunta>
 <pregunta>
       <code>372</code>
-      <enunciado>Cuando se activa el sistema nervioso simpático se produce:</enunciado>
+      <enunciado>Cuando se activa el sistema nervioso simpático se produce lo siguiente excepto:</enunciado>
+      <opcion>Aumento de la frecuencia cardíaca.</opcion>
+      <opcion>Broncodilatación</opcion>
+      <opcion>Vasoconstricción periférica</opcion>
+      <opcion>Disminución de la secreción salivar</opcion>
+      <opcion>Miosis</opcion>
+      <respuesta>5</respuesta>
+</pregunta>
+<pregunta>
+      <code>3721</code>
+      <enunciado>Cuando se activa el sistema nervioso simpático se produce lo siguiente excepto:</enunciado>
       <opcion>Dilatación pupilar (midriasis)</opcion>
       <opcion>Aumento de la frecuencia cardíaca.</opcion>
       <opcion>Broncodilatación</opcion>
-      <opcion>Vasocosntricción periférica</opcion>
-      <opcion>Disminución de la secreción salivar</opcion>
-      <opcion>Miosis</opcion>
-      <opcion>Broncoconstricción</opcion>
-      <opcion>Bradicardia</opcion>
+      <opcion>Vasoconstricción periférica</opcion>
       <opcion>Aumento de la motilidad intestinal</opcion>
-      <opcion>Vasodilatación</opcion>
-      <opcion>Aumento de secreciones</opcion>
-      <respuesta>0</respuesta>
+      <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
       <code>1652</code>
@@ -1596,19 +1628,69 @@
 </pregunta>
 <pregunta>
       <code>373</code>
-      <enunciado>Cuando se activa el sistema nervioso parasimpático se produce:</enunciado>
-      <opcion>Dilatación pupilar (midriasis)</opcion>
-      <opcion>Aumento de la frecuencia cardíaca.</opcion>
-      <opcion>Broncodilatación</opcion>
-      <opcion>Vasocosntricción periférica</opcion>
-      <opcion>Disminución de la secreción salivar</opcion>
-      <opcion>Miosis</opcion>
+      <enunciado>Cuando se activa el sistema nervioso parasimpático se produce todo lo siguiente excepto:</enunciado>
+      <opcion>Midriasis</opcion>
       <opcion>Broncoconstricción</opcion>
       <opcion>Bradicardia</opcion>
       <opcion>Aumento de la motilidad intestinal</opcion>
       <opcion>Vasodilatación</opcion>
       <opcion>Aumento de secreciones</opcion>
-      <respuesta>0</respuesta>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>3731</code>
+      <enunciado>Cuando se activa el sistema nervioso parasimpático se produce todo lo siguiente excepto:</enunciado>
+      <opcion>Disminución de las secreciones</opcion>
+      <opcion>Broncoconstricción</opcion>
+      <opcion>Bradicardia</opcion>
+      <opcion>Aumento de la motilidad intestinal</opcion>
+      <opcion>Vasodilatación</opcion>
+      <opcion>Miosis</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>3732</code>
+      <enunciado>Cuando se activa el sistema nervioso parasimpático se produce todo lo siguiente excepto:</enunciado>
+      <opcion>Vasoconstricción</opcion>
+      <opcion>Broncoconstricción</opcion>
+      <opcion>Bradicardia</opcion>
+      <opcion>Aumento de la motilidad intestinal</opcion>
+      <opcion>Miosis</opcion>
+      <opcion>Aumento de secreciones</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>3733</code>
+      <enunciado>Cuando se activa el sistema nervioso parasimpático se produce todo lo siguiente excepto:</enunciado>
+      <opcion>Broncodilatación</opcion>
+      <opcion>Miosis</opcion>
+      <opcion>Bradicardia</opcion>
+      <opcion>Aumento de la motilidad intestinal</opcion>
+      <opcion>Vasodilatación</opcion>
+      <opcion>Aumento de secreciones</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>3734</code>
+      <enunciado>Cuando se activa el sistema nervioso parasimpático se produce todo lo siguiente excepto:</enunciado>
+      <opcion>Vasoconstricción</opcion>
+      <opcion>Broncoconstricción</opcion>
+      <opcion>Bradicardia</opcion>
+      <opcion>Aumento de la motilidad intestinal</opcion>
+      <opcion>Miosis</opcion>
+      <opcion>Aumento de secreciones</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>3735</code>
+      <enunciado>Cuando se activa el sistema nervioso parasimpático se produce todo lo siguiente excepto:</enunciado>
+      <opcion>Disminución de la motilidad intestinal</opcion>
+      <opcion>Broncoconstricción</opcion>
+      <opcion>Bradicardia</opcion>
+      <opcion>Miosis</opcion>
+      <opcion>Vasodilatación</opcion>
+      <opcion>Aumento de secreciones</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>1653</code>
@@ -1662,7 +1744,7 @@
 </pregunta>
 <pregunta>
       <code>1656</code>
-      <enunciado>La hormona oxitocina es la responsable del transporte de la leche, a través de los conductos galactóforos, hasta los senos lactíferos, ¿qué estímlo genera la secrección de oxitocina?</enunciado>
+      <enunciado>La hormona oxitocina es la responsable del transporte de la leche, a través de los conductos galactóforos, hasta los senos lactíferos, ¿qué estímulo genera la secrección de oxitocina?</enunciado>
       <opcion>El llanto del lactante</opcion>
       <opcion>La succión de la mama</opcion>
       <opcion>El vaciamiento de la mama</opcion>
@@ -1673,22 +1755,32 @@
 <pregunta>
       <code>377</code>
       <enunciado>El encéfalo es la parte del SNC que se encuentra en el interior del cráneo. Tiene tres partes principales:</enunciado>
-      <opcion>Encéfalo anterior</opcion>
-      <opcion>Encéfalo posterior</opcion>
-      <opcion>Encéfalo medio</opcion>
-      <opcion>Encéfalo izquierdo</opcion>
-      <opcion>Encéfalo derecho</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Cerebro, cuerpo calloso y bulbo raquídeo</opcion>
+      <opcion>Cerebro anterior, medio y posterior</opcion>
+      <opcion>Prosencéfalo, encéfalo medio y bulbo raquídeo</opcion>
+      <opcion>Encéfalo izquierdo y derecho</opcion>
+      <opcion>Encéfalo de Silvio y encéfalo de Rolando</opcion>
+      <respuesta>2</respuesta>
+</pregunta>
+<pregunta>
+      <code>9999</code>
+      <enunciado>El puente de Varolio se encuentra entre:</enunciado>
+      <opcion>El mesencéfalo y el bulbo raquídeo</opcion>
+      <opcion>El mesencéfalo y el diencéfalo</opcion>
+      <opcion>El diencéfalo y el telencéfalo</opcion>
+      <opcion>El tálamo y el subtálamo</opcion>
+      <opcion>Los hemisferios derecho e izquierdo</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>1657</code>
       <enunciado>La información sensorial del gusto es vehiculizada al SNC mediante dos pares craneales:</enunciado>
-      <opcion>VII</opcion>
-      <opcion>IX</opcion>
-      <opcion>V</opcion>
-      <opcion>VI</opcion>
-      <opcion>VIII</opcion>
-      <respuesta>0</respuesta>
+      <opcion>VII y IX</opcion>
+      <opcion>VIII y IX</opcion>
+      <opcion>V y VI</opcion>
+      <opcion>VI y VII</opcion>
+      <opcion>VIII y X</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>378</code>
@@ -1862,13 +1954,15 @@
 </pregunta>
 <pregunta>
       <code>1666</code>
-      <enunciado>Los cinco sabores son:</enunciado>
+      <enunciado>Los sabores son:</enunciado>
       <opcion>Dulce</opcion>
       <opcion>Salado</opcion>
       <opcion>Amargo</opcion>
       <opcion>Umami</opcion>
       <opcion>Ácido</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Todas son correctas</opcion>
+      <no_barajar>1</no_barajar>
+      <respuesta>6</respuesta>
 </pregunta>
 <pregunta>
       <code>387</code>
@@ -2073,7 +2167,7 @@
       <opcion>El humor vítreo</opcion>
       <respuesta>2</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>402</code>
       <enunciado>Señale cuál de las siguientes vías forma parte de la vía extrapiramidal.</enunciado>
       <opcion>Rubroespinal</opcion>
@@ -2085,7 +2179,7 @@
       <opcion>Fascículo espinotalámico anterior</opcion>
       <opcion>Talamicoespinal</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1682</code>
       <enunciado>La papila ocular o mancha ciega es:</enunciado>
@@ -2096,7 +2190,7 @@
       <opcion>La porción receptiva de la luz</opcion>
       <respuesta>2</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>403</code>
       <enunciado>Las vías ascendentes de la sensibilidad son:</enunciado>
       <opcion>Fascículo espinotalámico</opcion>
@@ -2105,7 +2199,7 @@
       <opcion>Vía rubroespinal</opcion>
       <opcion>Vía reticuloespinal</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1683</code>
       <enunciado>Entre las cámaras del globo ocular, señale aquella que:</enunciado>
@@ -2404,6 +2498,10 @@
       <enunciado>La cromatina aparece en forma de gránulos dispersos por el núcleo celular en la:</enunciado>
       <opcion>Interfase</opcion>
       <opcion>Metafase</opcion>
+      <opcion>Profase</opcion>
+      <opcion>Anafase</opcion>
+      <opcion>Telofase</opcion>
+      <no_barajar>1</no_barajar>
       <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
@@ -2428,9 +2526,10 @@
 </pregunta>
 <pregunta>
       <code>162</code>
-      <enunciado>La cromatina aparece en forma compacta y organizada, cromosoma.</enunciado>
+      <enunciado>La cromatina aparece en forma compacta y organizada, en forma de cromosoma, durante la:</enunciado>
       <opcion>Interfase</opcion>
       <opcion>Metafase</opcion>
+      <opcion>Profase</opcion>
       <respuesta>2</respuesta>
 </pregunta>
 <pregunta>
@@ -2453,7 +2552,7 @@
       <opcion>Conducto lacrimonasal</opcion>
       <respuesta>4</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>419</code>
       <enunciado>El nervio cubital inerva:</enunciado>
       <opcion>La cara dorsal del brazo y el antebrazo</opcion>
@@ -2462,7 +2561,7 @@
       <opcion>El tercer y cuarto dedos de la mano y los músculos lumbricares</opcion>
       <opcion>Los músculos del hombro</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1699</code>
       <enunciado>La porción excretora del sistema lagrimal está constituida por los puntos lagrimales, canalículos, canalículo común, saco lagrimal y conducto lacrimonasal. Señale aquella que se corresponda con la siguiente definición:</enunciado>
@@ -2489,7 +2588,7 @@
       <opcion>Nervio obturador</opcion>
       <respuesta>1</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1700</code>
       <enunciado>El sistema oculomotor está formado por los siguientes músculos estriados:</enunciado>
       <opcion>Recto superior</opcion>
@@ -2499,7 +2598,7 @@
       <opcion>Oblicuo inferior o menor</opcion>
       <opcion>Recto interno</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>421</code>
       <enunciado>El nervio que inerva el músculo aductor es:</enunciado>
@@ -2567,10 +2666,10 @@
       <enunciado>Encargadas de la secreción sebácea de la lágrima</enunciado>
       <opcion>Glándulas de Zeiss</opcion>
       <opcion>Glándulas de Moll</opcion>
-      <opcion>Glándulas de MElbomio</opcion>
+      <opcion>Glándulas de Melbomio</opcion>
       <respuesta>1</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>170</code>
       <enunciado>Las bases púricas son:</enunciado>
       <opcion>A</opcion>
@@ -2579,7 +2678,7 @@
       <opcion>C</opcion>
       <opcion>U</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>426</code>
       <enunciado>En el triángulo de los escalenos encontraremos:</enunciado>
@@ -2594,10 +2693,10 @@
       <enunciado>Encargadas de la secreción sudorípara de la lágrima</enunciado>
       <opcion>Glándulas de Zeiss</opcion>
       <opcion>Glándulas de Moll</opcion>
-      <opcion>Glándulas de MElbomio</opcion>
+      <opcion>Glándulas de Melbomio</opcion>
       <respuesta>2</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>171</code>
       <enunciado>Las bases pirimidínicas son:</enunciado>
       <opcion>A</opcion>
@@ -2606,7 +2705,7 @@
       <opcion>C</opcion>
       <opcion>U</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>427</code>
       <enunciado>El drenaje de las venas coronarias tiene lugar en:</enunciado>
@@ -2626,13 +2725,13 @@
 </pregunta>
 <pregunta>
       <code>172</code>
-      <enunciado>Son bases nitrogenadas del ARN:</enunciado>
+      <enunciado>No es una base nitrogenadas del ARN:</enunciado>
       <opcion>A</opcion>
       <opcion>T</opcion>
       <opcion>G</opcion>
       <opcion>C</opcion>
       <opcion>U</opcion>
-      <respuesta>0</respuesta>
+      <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
       <code>428</code>
@@ -2652,13 +2751,13 @@
 </pregunta>
 <pregunta>
       <code>173</code>
-      <enunciado>Son bases nitrogenadas del ADN:</enunciado>
+      <enunciado>No es una base nitrogenada del ADN:</enunciado>
       <opcion>A</opcion>
       <opcion>T</opcion>
       <opcion>G</opcion>
       <opcion>C</opcion>
       <opcion>U</opcion>
-      <respuesta>0</respuesta>
+      <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
       <code>429</code>
@@ -2750,17 +2849,6 @@
       <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
-      <code>1713</code>
-      <enunciado>Intervienen en el desarrollo de la mama:</enunciado>
-      <opcion>Estrógenos</opcion>
-      <opcion>Prolactina</opcion>
-      <opcion>Glucocorticoides suprarrenales</opcion>
-      <opcion>Insulina</opcion>
-      <opcion>Hormona del crecimiento</opcion>
-      <opcion>Progesterona</opcion>
-      <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
       <code>434</code>
       <enunciado>Señale cuál de estas afirmaciones es correcta:</enunciado>
       <opcion>La Ley de Frank-Starling se relaciona con la precarga cardíaca y la de Laplace con la postcarga.</opcion>
@@ -2773,7 +2861,8 @@
       <opcion>Glándulas uretrales</opcion>
       <opcion>Glándulas periuretrales</opcion>
       <opcion>Glándulas vestibulares o de Bartholino</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Todas son ciertas</opcion>
+      <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
       <code>435</code>
@@ -2884,12 +2973,13 @@
 </pregunta>
 <pregunta>
       <code>439</code>
-      <enunciado>Respecto a a aorta descendente, en su porción abdominal, señale cual de las siguientes afirmaciones es correcta.</enunciado>
+      <enunciado>Respecto a la aorta descendente, en su porción abdominal, señale cual de las siguientes afirmaciones es correcta.</enunciado>
       <opcion>El tronco celíaco es una de sus ramas, y tiene como ramas las arterias gástrica izquierda, hepática  esplénica</opcion>
       <opcion>Tiene como rama a la arteria mesentérica superior, que irriga la totalidad del inttestino delgado excepto la porción alta del duodeno. También irriga el ciego, el colon ascendente y una parte importante del transverso.</opcion>
       <opcion>La arteria mesentérica inferior es una de sus ramas, y riega la mitad izquierda del colon transverso, la totalidad del colon descendente, el colon sigmoide y el recto.</opcion>
       <opcion>Termina dividiendose en las arterias ilíacas internas o hipogástricas y las arterias ilíacas externas</opcion>
       <opcion>Todas son verdaderas</opcion>
+      <no_barajar>1</no_barajar>
       <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
@@ -2974,15 +3064,33 @@
       <opcion>Endodermo</opcion>
       <respuesta>1</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>442</code>
-      <enunciado>Señale las afirmaciones correctas respecto a la arteria mesentérica superior:</enunciado>
-      <opcion>Irriga la totalidad del intestino delgado excepto la porción alta del duodeno.</opcion>
+      <enunciado>Señale la afirmación INCORRECTA respecto a la arteria mesentérica superior:</enunciado>
+      <opcion>Irriga la totalidad del intestino delgado excepto la porción baja del duodeno.</opcion>
       <opcion>Irriga el ciego, el colon ascendente y una parte importante del transverso</opcion>
       <opcion>Irriga la mitad izquierda del colon transverso</opcion>
       <opcion>Irriga la totalidad del colon descendente, sigmoide y recto</opcion>
-      <respuesta>0</respuesta>
-</pregunta>
+      <respuesta>1</respuesta>
+</pregunta-arreglar>
+<pregunta-arreglar>
+      <code>442</code>
+      <enunciado>Señale la afirmación INCORRECTA respecto a la arteria mesentérica superior:</enunciado>
+      <opcion>Irriga la totalidad del intestino delgado excepto la porción alta del duodeno.</opcion>
+      <opcion>Irriga el ciego, el colon ascendente y una parte importante del transverso</opcion>
+      <opcion>Irriga la mitad derecha del colon transverso</opcion>
+      <opcion>Irriga la totalidad del colon descendente, sigmoide y recto</opcion>
+      <respuesta>3</respuesta>
+</pregunta-arreglar>
+<pregunta-arreglar>
+      <code>442</code>
+      <enunciado>Señale la afirmación INCORRECTA respecto a la arteria mesentérica superior:</enunciado>
+      <opcion>Irriga la totalidad del intestino delgado excepto la porción alta del duodeno.</opcion>
+      <opcion>Irriga el ciego, el colon ascendente y una parte importante del transverso</opcion>
+      <opcion>Irriga la mitad izquierda del colon transverso</opcion>
+      <opcion>Irriga la totalidad del colon transverso, descendente y sigmoide, a excepción del recto</opcion>
+      <respuesta>4</respuesta>
+</pregunta-arreglar>
 <pregunta>
       <code>1722</code>
       <enunciado>Señale aquel volúmen estático no forzado pulmonar que corresponda con la siguiente definición:</enunciado>
@@ -3004,15 +3112,15 @@
       <opcion>Endodermo</opcion>
       <respuesta>2</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>443</code>
-      <enunciado>Señale las afirmaciones correctas respecto a la arteria mesentérica inferior</enunciado>
-      <opcion>Irriga la totalidad del intestino delgado excepto la porción alta del duodeno.</opcion>
+      <enunciado>Señale la afirmación INCORRECTA respecto a la arteria mesentérica inferior</enunciado>
+      <opcion>Irriga la totalidad del intestino delgado excepto la porción baja del duodeno.</opcion>
       <opcion>Irriga el ciego, el colon ascendente y una parte importante del transverso</opcion>
       <opcion>Irriga la mitad izquierda del colon transverso</opcion>
       <opcion>Irriga la totalidad del colon descendente, sigmoide y recto</opcion>
-      <respuesta>0</respuesta>
-</pregunta>
+      <respuesta>1</respuesta>
+</pregunta-arreglar>
 <pregunta>
       <code>1723</code>
       <enunciado>Señale aquel volumen pulmonar dinámico o forzado que se corresponda con la siguiente definición:</enunciado>
@@ -3028,7 +3136,7 @@
       <opcion>Endodermo</opcion>
       <respuesta>3</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>444</code>
       <enunciado>Las arterias ilíacas internas o hipogástricas:</enunciado>
       <opcion>Dan lugar a la arteria pudenda interna.</opcion>
@@ -3036,7 +3144,7 @@
       <opcion>Dan lugar a la arteria obturatriz.</opcion>
       <opcion>Continúan con la arteria femoral para dar la vascularización a los miembros inferiores con la arteria poplítea que después se dividirá en las arterias tibial anterior y posterior.</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1724</code>
       <enunciado>Señale aquel volumen pulmonar dinámico o forzado que se corresponda con la siguiente definición:</enunciado>
@@ -3105,7 +3213,7 @@
       <opcion>Endodermo</opcion>
       <respuesta>3</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>447</code>
       <enunciado>¿Dónde no se encuentran vasos linfáticos?</enunciado>
       <opcion>SNC</opcion>
@@ -3117,7 +3225,7 @@
       <opcion>Placenta</opcion>
       <opcion>Dientes</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1727</code>
       <enunciado>La presión parcial de CO2 en sangre arterial en condiciones normales se encuentra en un promedio de:</enunciado>
@@ -3238,7 +3346,8 @@
       <opcion>Intercostales externos</opcion>
       <opcion>Serrato anterior</opcion>
       <opcion>Pectorales mayor y menor</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Todas son ciertas</opcion>
+      <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
       <code>196</code>
@@ -3343,7 +3452,8 @@
       <opcion>Oblicuos abdominales</opcion>
       <opcion>Transverso abdominal</opcion>
       <opcion>Cuadrado lumbar</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Todas son ciertas</opcion>
+      <respuesta>7</respuesta>
 </pregunta>
 <pregunta>
       <code>200</code>
@@ -3443,10 +3553,12 @@
 <pregunta>
       <code>1739</code>
       <enunciado>El pulmón derecho tiene los siguientes lóbulos:</enunciado>
-      <opcion>Superior</opcion>
-      <opcion>Medio</opcion>
-      <opcion>Inferior</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Superior, medio e inferior</opcion>
+      <opcion>Medio e inferior</opcion>
+      <opcion>Superior e inferior</opcion>
+      <opcion>Medio y superior</opcion>
+      <opcion>Ninguna es correcta</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>204</code>
@@ -3467,14 +3579,16 @@
       <respuesta>2</respuesta>
 </pregunta>
 <pregunta>
-      <code>1740</code>
+      <code>1739</code>
       <enunciado>El pulmón izquierdo tiene los siguientes lóbulos:</enunciado>
-      <opcion>Superior</opcion>
-      <opcion>Medio</opcion>
-      <opcion>Inferior</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Superior, medio e inferior</opcion>
+      <opcion>Medio e inferior</opcion>
+      <opcion>Superior e inferior</opcion>
+      <opcion>Medio y superior</opcion>
+      <opcion>Ninguna es correcta</opcion>
+      <respuesta>3</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1741</code>
       <enunciado>En el anillo linfático de Waldeyer se encuentran:</enunciado>
       <opcion>Dos amígdalas palatinas</opcion>
@@ -3482,8 +3596,8 @@
       <opcion>Una amígdala faríngea en la rinofaringe superior o techo (adenoides)</opcion>
       <opcion>Amígdalas linguales en la raíz de la lengua</opcion>
       <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
+</pregunta-arreglar>
+<pregunta-arreglar>
       <code>206</code>
       <enunciado>Señale células fijas del tejido conjuntivo:</enunciado>
       <opcion>Fibroblastos</opcion>
@@ -3495,15 +3609,15 @@
       <opcion>Eosinófilos</opcion>
       <opcion>Mastocitos</opcion>
       <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
+</pregunta-arreglar>
+<pregunta-arreglar>
       <code>1742</code>
       <enunciado>El hueso/huesos que da/dan forma a la estructura nasal es el:</enunciado>
       <opcion>El etmoides da forma a los cornetes superior y medio</opcion>
       <opcion>El cornete inferior es un hueso independiente que se ancla a las paredes laterales</opcion>
       <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
+</pregunta-arreglar>
+<pregunta-arreglar>
       <code>207</code>
       <enunciado>Son células libres o migratorias del tejido conjuntivo:</enunciado>
       <opcion>Fibroblastos</opcion>
@@ -3515,22 +3629,22 @@
       <opcion>Eosinófilos</opcion>
       <opcion>Mastocitos</opcion>
       <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
+</pregunta-arreglar>
+<pregunta-arreglar>
       <code>1743</code>
       <enunciado>El suelo de la cavidad nasal lo constituyen:</enunciado>
       <opcion>La porción horizontal del maxilar superior</opcion>
       <opcion>El palatino (lámina horizontal) que, a su vez, sirven de techo de la boca o paladar duro.</opcion>
       <respuesta>0</respuesta>
-</pregunta>
-<pregunta>
+</pregunta-arreglar>
+<pregunta-arreglar>
       <code>1744</code>
       <enunciado>Dan forma al tabique nasal o pared medial:</enunciado>
       <opcion>Lámina perpendicular del etmoides</opcion>
       <opcion>El hueso vómer</opcion>
       <opcion>Cartílago septal en la parte más anterior</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>209</code>
       <enunciado>Grupo diverso de proteínas donde se encuentran los anticuerpos del sistema inmunitario y las proteínas transportadoras de lípidos y de algunos metales pesados.</enunciado>
@@ -3548,7 +3662,7 @@
       <opcion>El esfenoides</opcion>
       <respuesta>3</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>210</code>
       <enunciado>Señale qué procesos pertenecen a la mielopoyesis:</enunciado>
       <opcion>Eritropyesis</opcion>
@@ -3557,7 +3671,7 @@
       <opcion>Trombopoyesis</opcion>
       <opcion>Serie linfoide</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1746</code>
       <enunciado>El borde posterior superior del techo de la cavidad nasal lo constituye/n:</enunciado>
@@ -3623,7 +3737,7 @@
       <opcion>Aritenoides</opcion>
       <respuesta>4</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1751</code>
       <enunciado>Cartílagos de la laringe. Señale aquellos que sean impares:</enunciado>
       <opcion>Epiglotis</opcion>
@@ -3631,7 +3745,7 @@
       <opcion>Cricoides</opcion>
       <opcion>Aritenoides</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1752</code>
       <enunciado>Cartílagos de la laringe. Señale aquellos que sean pares:</enunciado>
@@ -3654,12 +3768,12 @@
 <pregunta>
       <code>219</code>
       <enunciado>Son granulocitos o leucocitos polimorfonucleados:</enunciado>
-      <opcion>Neutrófilos</opcion>
-      <opcion>Eosinófilos</opcion>
-      <opcion>Basófilos</opcion>
-      <opcion>Linfocitos</opcion>
-      <opcion>Monocitos</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Neutrófilos, eosinófilos y basófilos</opcion>
+      <opcion>Eosinófilos, neutrófilos y linfocitos</opcion>
+      <opcion>Neutrófilos, basófilos y monocitos</opcion>
+      <opcion>Linfocitos y monocitos</opcion>
+      <opcion>Neutrófilos, eosinófilos y linfocitos</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>220</code>
@@ -3862,6 +3976,7 @@
       <opcion>Neutrófilos</opcion>
       <opcion>Linfocitos</opcion>
       <opcion>Todas las anteriores respuestas son correctas.</opcion>
+      <no_barajar>1</no_barajar>
       <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
@@ -3890,7 +4005,7 @@
 </pregunta>
 <pregunta>
       <code>244</code>
-      <enunciado>El aumento de polilmorfonucleares o granulocitos de tipo neutrófilo, es una desviación:</enunciado>
+      <enunciado>El aumento de polimorfonucleares o granulocitos de tipo neutrófilo, es una desviación:</enunciado>
       <opcion>a la izquierda</opcion>
       <opcion>a la derecha</opcion>
       <respuesta>1</respuesta>
@@ -4081,9 +4196,9 @@
 <pregunta>
       <code>1105</code>
       <enunciado>La función de la glándula pineal es</enunciado>
-      <opcion>estimulada por la oscuridad e inhibida por la luz mediante impulsos nerviosos de la retina.</opcion>
-      <opcion>estimulada por la luz e inhibida por la oscuridad mediante impulsos nerviosos de la retina.</opcion>
-      <opcion>regulada por el hipotálamo</opcion>
+      <opcion>Estimulada por la oscuridad e inhibida por la luz mediante impulsos nerviosos de la retina.</opcion>
+      <opcion>Estimulada por la luz e inhibida por la oscuridad mediante impulsos nerviosos de la retina.</opcion>
+      <opcion>Regulada por el hipotálamo</opcion>
       <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
@@ -4133,11 +4248,20 @@
 <pregunta>
       <code>1113</code>
       <enunciado>La hormona paratiroidea (PTH) produce:</enunciado>
-      <opcion>hipercalcemia</opcion>
-      <opcion>hiperfosfatemia</opcion>
-      <opcion>hipocalcemia</opcion>
-      <opcion>hipofosfatemia</opcion>
-      <respuesta>0</respuesta>
+      <opcion>hipercalcemia e hipofosfatemia</opcion>
+      <opcion>hiperfosfatemia e hipercalcemia</opcion>
+      <opcion>hipocalcemia e hipofosfaturia</opcion>
+      <opcion>hipofosfatemia e hipofosfatemia</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>1113</code>
+      <enunciado>La hormona paratiroidea (PTH) produce:</enunciado>
+      <opcion>hipercalcemia e hiperfosfaturia</opcion>
+      <opcion>hiperfosfatemia e hipercalcemia</opcion>
+      <opcion>hipocalcemia e hipofosfaturia</opcion>
+      <opcion>hipofosfatemia e hipofosfatemia</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>1114</code>
@@ -4146,7 +4270,7 @@
       <opcion>Primero en el riñón y posteriormente en el hígado</opcion>
       <respuesta>1</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1116</code>
       <enunciado>Las glándulas suprarrenales:</enunciado>
       <opcion>También se llaman glándulas adrenales</opcion>
@@ -4154,7 +4278,7 @@
       <opcion>Tienen como una de sus partes la médula suprarrenal</opcion>
       <opcion>Son glándulas endocrinas</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1117</code>
       <enunciado>Las hormonas mineralcorticoides, como la aldosterona, se sintetizan en:</enunciado>
@@ -4181,7 +4305,7 @@
       <opcion>Son hormonas glucídicas</opcion>
       <respuesta>1</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1120</code>
       <enunciado>El cortisol:</enunciado>
       <opcion>Es una hormona glucocorticoide sintetizada en la capa fascicular de la corteza suprarrenal</opcion>
@@ -4193,7 +4317,7 @@
       <opcion>Activa la degradación de proteínas y liberación de lípidos</opcion>
       <opcion>Su control se realiza a través del hipotálamo por medio de la CRH que activa el ACTH hipofisiario</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1121</code>
       <enunciado>Pequeñas cantidades de andrógenos, estrógenos y progesterona se sintetizan en:</enunciado>
@@ -4246,16 +4370,65 @@
 </pregunta>
 <pregunta>
       <code>1127</code>
-      <enunciado>La somatostatina:</enunciado>
-      <opcion>Deprime la secreción de insulina y glucagón en los islotes de Langerhans</opcion>
-      <opcion>Aumenta la secreción de insulina o glucagón en los islotes de Langerhans</opcion>
-      <opcion>Aumenta la motilidad de estómago, duodeno y vesícula biliar.</opcion>
+      <enunciado>Una de las siguientes afirmaciones sobre la somatostatina es INCORRECTA:</enunciado>
+      <opcion>Aumenta la secreción de insulina y glucagón en los islotes de Langerhans</opcion>
       <opcion>Disminuye la motilidad de estómago, duodeno y vesícula biliar</opcion>
       <opcion>Inhibe la hormona del crecimiento (GH)</opcion>
-      <opcion>Estimula la hormona del crecimiento (GH)</opcion>
-      <respuesta>0</respuesta>
+      <opcion>Es producida en los islotes delta de Langerhans</opcion>
+      <opcion>Inhibe el eje hipotálamo-hipófisis-tiroides</opcion>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
+      <code>11275</code>
+      <enunciado>Una de las siguientes afirmaciones sobre la somatostatina es INCORRECTA:</enunciado>
+      <opcion>Disminuye la secreción de insulina y glucagón en los islotes de Langerhans</opcion>
+      <opcion>Aumenta la motilidad de estómago, duodeno y vesícula biliar</opcion>
+      <opcion>Inhibe la hormona del crecimiento (GH)</opcion>
+      <opcion>Es producida en los islotes delta de Langerhans</opcion>
+      <opcion>Inhibe el eje hipotálamo-hipófisis-tiroides</opcion>
+      <respuesta>2</respuesta>
+</pregunta>
+<pregunta>
+      <code>11274</code>
+      <enunciado>Una de las siguientes afirmaciones sobre la somatostatina es INCORRECTA:</enunciado>
+      <opcion>Disminuye la secreción de insulina y glucagón en los islotes de Langerhans</opcion>
+      <opcion>Disminuye la motilidad de estómago, duodeno y vesícula biliar</opcion>
+      <opcion>Estimula la hormona del crecimiento (GH)</opcion>
+      <opcion>Es producida en los islotes delta de Langerhans</opcion>
+      <opcion>Inhibe el eje hipotálamo-hipófisis-tiroides</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>11275</code>
+      <enunciado>Una de las siguientes afirmaciones sobre la somatostatina es INCORRECTA:</enunciado>
+      <opcion>Disminuye la secreción de insulina y glucagón en los islotes de Langerhans</opcion>
+      <opcion>Aumenta la motilidad de estómago, duodeno y vesícula biliar</opcion>
+      <opcion>Estimula la hormona del crecimiento (GH)</opcion>
+      <opcion>Es producida en los islotes beta de Langerhans</opcion>
+      <opcion>Inhibe el eje hipotálamo-hipófisis-tiroides</opcion>
+      <respuesta>4</respuesta>
+</pregunta>
+<pregunta>
+      <code>11275</code>
+      <enunciado>Una de las siguientes afirmaciones sobre la somatostatina es INCORRECTA:</enunciado>
+      <opcion>Disminuye la secreción de insulina y glucagón en los islotes de Langerhans</opcion>
+      <opcion>Aumenta la motilidad de estómago, duodeno y vesícula biliar</opcion>
+      <opcion>Estimula la hormona del crecimiento (GH)</opcion>
+      <opcion>Es producida en los islotes alfa de Langerhans</opcion>
+      <opcion>Inhibe el eje hipotálamo-hipófisis-tiroides</opcion>
+      <respuesta>4</respuesta>
+</pregunta>
+<pregunta>
+      <code>11275</code>
+      <enunciado>Una de las siguientes afirmaciones sobre la somatostatina es INCORRECTA:</enunciado>
+      <opcion>Disminuye la secreción de insulina y glucagón en los islotes de Langerhans</opcion>
+      <opcion>Aumenta la motilidad de estómago, duodeno y vesícula biliar</opcion>
+      <opcion>Estimula la hormona del crecimiento (GH)</opcion>
+      <opcion>Es producida en los islotes delta de Langerhans</opcion>
+      <opcion>Estimula el eje hipotálamo-hipófisis-tiroides</opcion>
+      <respuesta>5</respuesta>
+</pregunta>
+<pregunta-arreglar>
       <code>1128</code>
       <enunciado>Son hormonas polipeptídicas</enunciado>
       <opcion>Insulina</opcion>
@@ -4264,7 +4437,7 @@
       <opcion>Cortisol</opcion>
       <opcion>Aldosterona</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1129</code>
       <enunciado>La gastrina, la secretina, la colecistoquinina (CCK), la serotonina, son hormonas que se segregan en:</enunciado>
@@ -4292,14 +4465,14 @@
       <opcion>Un cuerpo esponjoso y un cuerpo cavernoso</opcion>
       <respuesta>4</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1753</code>
       <enunciado>Los órganos linfoides son:</enunciado>
       <opcion>Timo</opcion>
       <opcion>Ganglios linfáticos</opcion>
       <opcion>Bazo</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1754</code>
       <enunciado>En este órgano linfoide tiene lugar la maduración de los linfocitos T:</enunciado>
@@ -4532,13 +4705,6 @@
       <opcion>III par craneal</opcion>
       <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
-      <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
-      <opcion>VIII par craneal</opcion>
-      <opcion>IX par craneal</opcion>
-      <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
       <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
@@ -4549,13 +4715,6 @@
       <opcion>III par craneal</opcion>
       <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
-      <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
-      <opcion>VIII par craneal</opcion>
-      <opcion>IX par craneal</opcion>
-      <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
       <respuesta>5</respuesta>
 </pregunta>
 <pregunta>
@@ -4567,132 +4726,78 @@
       <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
       <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
-      <opcion>VIII par craneal</opcion>
-      <opcion>IX par craneal</opcion>
-      <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
       <respuesta>2</respuesta>
 </pregunta>
 <pregunta>
       <code>342</code>
       <enunciado>El nervio motor ocular externo es el:</enunciado>
-      <opcion>I par craneal</opcion>
-      <opcion>II par craneal</opcion>
       <opcion>III par craneal</opcion>
       <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
       <opcion>VI par craneal</opcion>
       <opcion>VII par craneal</opcion>
-      <opcion>VIII par craneal</opcion>
-      <opcion>IX par craneal</opcion>
-      <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
-      <respuesta>6</respuesta>
+      <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
       <code>343</code>
       <enunciado>El nervio facial es el:</enunciado>
-      <opcion>I par craneal</opcion>
-      <opcion>II par craneal</opcion>
-      <opcion>III par craneal</opcion>
-      <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
       <opcion>VI par craneal</opcion>
       <opcion>VII par craneal</opcion>
       <opcion>VIII par craneal</opcion>
       <opcion>IX par craneal</opcion>
       <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
-      <respuesta>7</respuesta>
+      <respuesta>3</respuesta>
 </pregunta>
 <pregunta>
       <code>344</code>
       <enunciado>El nervio auditivo o estatoacústico es el:</enunciado>
-      <opcion>I par craneal</opcion>
-      <opcion>II par craneal</opcion>
-      <opcion>III par craneal</opcion>
-      <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
       <opcion>VI par craneal</opcion>
       <opcion>VII par craneal</opcion>
       <opcion>VIII par craneal</opcion>
       <opcion>IX par craneal</opcion>
-      <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
-      <respuesta>8</respuesta>
+      <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
       <code>345</code>
       <enunciado>El nervio glosofaríngeo es el:</enunciado>
-      <opcion>I par craneal</opcion>
+      <opcion>IX par craneal</opcion>
       <opcion>II par craneal</opcion>
       <opcion>III par craneal</opcion>
       <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
-      <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
-      <opcion>VIII par craneal</opcion>
-      <opcion>IX par craneal</opcion>
-      <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
-      <respuesta>9</respuesta>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>346</code>
       <enunciado>El nervio vago o neumogástrico es el:</enunciado>
-      <opcion>I par craneal</opcion>
-      <opcion>II par craneal</opcion>
-      <opcion>III par craneal</opcion>
-      <opcion>IV par craneal</opcion>
-      <opcion>V par craneal</opcion>
-      <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
-      <opcion>VIII par craneal</opcion>
-      <opcion>IX par craneal</opcion>
       <opcion>X par craneal</opcion>
+      <opcion>IX par craneal</opcion>
+      <opcion>VIII par craneal</opcion>
       <opcion>XI par craneal</opcion>
       <opcion>XII par craneal</opcion>
-      <respuesta>10</respuesta>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>347</code>
       <enunciado>El nervio espinal es el:</enunciado>
-      <opcion>I par craneal</opcion>
-      <opcion>II par craneal</opcion>
-      <opcion>III par craneal</opcion>
-      <opcion>IV par craneal</opcion>
-      <opcion>V par craneal</opcion>
-      <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
       <opcion>VIII par craneal</opcion>
       <opcion>IX par craneal</opcion>
       <opcion>X par craneal</opcion>
       <opcion>XI par craneal</opcion>
       <opcion>XII par craneal</opcion>
-      <respuesta>11</respuesta>
+      <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
       <code>348</code>
       <enunciado>El nervio hipogloso es el:</enunciado>
-      <opcion>I par craneal</opcion>
-      <opcion>II par craneal</opcion>
-      <opcion>III par craneal</opcion>
-      <opcion>IV par craneal</opcion>
-      <opcion>V par craneal</opcion>
-      <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
       <opcion>VIII par craneal</opcion>
       <opcion>IX par craneal</opcion>
       <opcion>X par craneal</opcion>
       <opcion>XI par craneal</opcion>
       <opcion>XII par craneal</opcion>
-      <respuesta>12</respuesta>
+      <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
       <code>140</code>
@@ -4702,13 +4807,6 @@
       <opcion>III par craneal</opcion>
       <opcion>IV par craneal</opcion>
       <opcion>V par craneal</opcion>
-      <opcion>VI par craneal</opcion>
-      <opcion>VII par craneal</opcion>
-      <opcion>VIII par craneal</opcion>
-      <opcion>IX par craneal</opcion>
-      <opcion>X par craneal</opcion>
-      <opcion>XI par craneal</opcion>
-      <opcion>XII par craneal</opcion>
       <respuesta>1</respuesta>
 </pregunta>
 <pregunta>
@@ -5463,7 +5561,7 @@
 </pregunta>
 <pregunta>
       <code>50</code>
-      <enunciado>El espacio asociado a las meninges en el que se encuentran las raíces de los nervios espinales se denomina: (ANULADA)</enunciado>
+      <enunciado>El espacio asociado a las meninges en el que se encuentran las raíces de los nervios espinales se denomina:</enunciado>
       <opcion>Epidural</opcion>
       <opcion>Subdural</opcion>
       <opcion>Subaracnoideo</opcion>
@@ -5473,7 +5571,7 @@
 </pregunta>
 <pregunta>
       <code>51</code>
-      <enunciado>La mayor parte del agua se absorbe en: (ANULADA)</enunciado>
+      <enunciado>La mayor parte del agua se absorbe en:</enunciado>
       <opcion>Duodeno</opcion>
       <opcion>Yeyuno</opcion>
       <opcion>Íleon</opcion>
@@ -5959,6 +6057,7 @@
       <opcion>El funcionamiento del sistema nervioso autónomo y del sistema</opcion>
       <opcion>Toda la información que llega al organismo excepto la olfativa</opcion>
       <opcion>Ninguna de las anteriores</opcion>
+      <no_barajar>1</no_barajar>
       <respuesta>3</respuesta>
 </pregunta>
 <pregunta>
@@ -6024,10 +6123,37 @@
       <code>1523</code>
       <enunciado>¿Cuál de las siguientes opciones es cierta respecto a la hormona paratiroidea o parathormona?</enunciado>
       <opcion>Disminuye la excreción de calcio por el organismo</opcion>
+      <opcion>Disminuye directamente la absorción de calcio por parte del intestino</opcion>
+      <opcion>Se secreta como respuesta a un aumento de los niveles plasmáticos</opcion>
+      <opcion>En exceso, se produce desmineralización del hueso y disminuye la cantidad de calcio plasmático</opcion>
+      <respuesta>1</respuesta>
+</pregunta>
+<pregunta>
+      <code>1523</code>
+      <enunciado>¿Cuál de las siguientes opciones es cierta respecto a la hormona paratiroidea o parathormona?</enunciado>
+      <opcion>Aumenta la excreción de calcio por el organismo</opcion>
       <opcion>Aumenta directamente la absorción de calcio por parte del intestino</opcion>
       <opcion>Se secreta como respuesta a un aumento de los niveles plasmáticos</opcion>
-      <opcion>En exceso, se produce desmineralización del hueso y aumenta la cantidad de calcio plasmático</opcion>
-      <respuesta>0</respuesta>
+      <opcion>En exceso, se produce desmineralización del hueso y disminuye la cantidad de calcio plasmático</opcion>
+      <respuesta>2</respuesta>
+</pregunta>
+<pregunta>
+      <code>1523</code>
+      <enunciado>¿Cuál de las siguientes opciones es cierta respecto a la hormona paratiroidea o parathormona?</enunciado>
+      <opcion>Aumenta la excreción de calcio por el organismo</opcion>
+      <opcion>Aumenta directamente la absorción de calcio por parte del intestino</opcion>
+      <opcion>Se secreta como respuesta a una disminución de los niveles plasmáticos</opcion>
+      <opcion>En exceso, se produce desmineralización del hueso y disminuye la cantidad de calcio plasmático</opcion>
+      <respuesta>3</respuesta>
+</pregunta>
+<pregunta>
+      <code>1523</code>
+      <enunciado>¿Cuál de las siguientes opciones es cierta respecto a la hormona paratiroidea o parathormona?</enunciado>
+      <opcion>Aumenta la excreción de calcio por el organismo</opcion>
+      <opcion>Aumenta directamente la absorción de calcio por parte del intestino</opcion>
+      <opcion>Se secreta como respuesta a un aumento de los niveles plasmáticos</opcion>
+      <opcion>En exceso, se produce desmineralización del hueso y aumento de la cantidad de calcio plasmático</opcion>
+      <respuesta>4</respuesta>
 </pregunta>
 <pregunta>
       <code>1524</code>
@@ -6056,14 +6182,13 @@
       <opcion>Falso</opcion>
       <respuesta>1</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1527</code>
       <enunciado>Las hormonas esteroideas son segregadas por:</enunciado>
       <opcion>Corteza suprarrenal</opcion>
       <opcion>Gónadas</opcion>
       <opcion>Glándula tiroides</opcion>
-      <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1528</code>
       <enunciado>En la fase lútea predomina/n la/s hormona/s:</enunciado>
@@ -6074,7 +6199,7 @@
       <opcion>Estrógenos y progesterona</opcion>
       <respuesta>1</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1529</code>
       <enunciado>Un niño de 10 años de edad con un déficit funcional de la adenohipófisis probablemente experimentará:</enunciado>
       <opcion>Presentará una tasa metabólica basal baja</opcion>
@@ -6083,7 +6208,7 @@
       <opcion>Baja estatura pero proporciones corporales relativamente normales</opcion>
       <opcion>Acromegalia</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1531</code>
       <enunciado>El estímulo más potente en la secreción de hormona del crecimiento es:</enunciado>
@@ -6111,7 +6236,7 @@
       <opcion>Unido a la aldosterona</opcion>
       <respuesta>2</respuesta>
 </pregunta>
-<pregunta>
+<pregunta-arreglar>
       <code>1534</code>
       <enunciado>¿Cuál/es de las siguientes glándulas endocrinas procede/n embriológicamente del ectoblasto?</enunciado>
       <opcion>Corteza suprarrenal</opcion>
@@ -6120,7 +6245,7 @@
       <opcion>Adenohipófisis</opcion>
       <opcion>Neurohipófisis</opcion>
       <respuesta>0</respuesta>
-</pregunta>
+</pregunta-arreglar>
 <pregunta>
       <code>1535</code>
       <enunciado>¿Cuál de las siguientes afirmaciones es cierta referidas a la insulina?</enunciado>
@@ -6129,3 +6254,7 @@
       <opcion>Su vida media en el plasma es larga (aproximadamente 30 minutos)</opcion>
       <opcion>Es captada con avidez por hígado, músculo, riñones y tejido adiposo</opcion>
       <opcion>Todas son ciertas</opcion>
+      <no_barajar>1</no_barajar>
+      <respuesta>5</respuesta>
+</pregunta>
+</examen>

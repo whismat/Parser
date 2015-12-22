@@ -5,44 +5,63 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/inicio"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.Toolbar
+        <include
             android:id="@+id/toolbar_main"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+            layout="@layout/toolbar">
+        </include>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:background="@drawable/toolbar_shadow"
             android:layout_below="@id/toolbar_main"
             />
-        <!--android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="20dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/ic_action_search"
-            app:fabSize="normal" /-->
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_below="@+id/toolbar_main">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/layout_main_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:src="@drawable/plus"
+                    android:tint="#FFFFFF"
+                    app:fabSize="normal" />
+            </RelativeLayout>
+        </FrameLayout>
 
     </RelativeLayout>
 
+
     <android.support.design.widget.NavigationView
-        app:headerLayout="@layout/navigation_header"
         android:id="@+id/navigation"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:itemTextColor="@color/fab_material_grey_900"
-        app:menu="@menu/navigationdraweritems"
-        />
+        app:itemTextColor="@color/material_blue_grey_900"
+        app:menu="@menu/drawer_view"
+        app:headerLayout="@layout/layout_main_navigationheader"
+        android:clickable="false">
 
-    </android.support.v4.widget.DrawerLayout>
 
+</android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

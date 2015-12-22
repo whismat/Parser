@@ -2,10 +2,18 @@
     <string name="app_name">EIR App</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Ajustes</string>
+    <string name="action_settings">Acerca de</string>
 
     <string name="drawer_open">Navigation Abierta</string>
     <string name="drawer_close">Navigation Cerrada</string>
+
+    <string name="main_navigation_header"></string>
+
+    <string name="listitems_main_1">Simulacro por asignatura</string>
+    <string name="listitems_main_2">Simulacro por año</string>
+    <string name="listitems_main_3">Simulacro completo</string>
+    <string name="listitems_main_4">Simulacro infinito</string>
+
 
     <string name="asignatura_1">Anatomofisiología</string>
     <string name="asignatura_2">Bioética y legislación</string>
@@ -34,12 +42,61 @@
     <string name="asignatura_25">Proceso asistencial de enfermería</string>
     <string name="asignatura_26">Procedimientos y técnicas</string>
     <string name="asignatura_27">Salud pública y comunitaria</string>
+    <string name="asignatura_28">Microbiología</string>
+
+    <string name="ano_1">2015</string>
+    <string name="ano_2">2014</string>
+    <string name="ano_3">2013</string>
+    <string name="ano_4">2012</string>
+    <string name="ano_5">2011</string>
+    <string name="ano_6">2010</string>
+    <string name="ano_7">2009</string>
+    <string name="ano_8">2008</string>
+    <string name="ano_9">2007</string>
+    <string name="ano_10">2006</string>
+    <string name="ano_11">2005</string>
+    <string name="ano_12">2004</string>
+    <string name="ano_13">2003</string>
+    <string name="ano_14">2002</string>
+    <string name="ano_15">2001</string>
+    <string name="ano_16">2000</string>
+    <string name="ano_17">1999</string>
+    <string name="ano_18">1998</string>
+    <string name="ano_19">1997</string>
+    <string name="ano_20">1996</string>
+    <string name="ano_21">1995</string>
+    <string name="ano_22">1994</string>
+    <string name="ano_23">1993</string>
 
 
-
-
+    <string-array name="anos">
+        <item>Examen año 2015</item>
+        <item>Examen año 2014</item>
+        <item>Examen año 2013</item>
+        <item>Examen año 2012</item>
+        <item>Examen año 2011</item>
+        <item>Examen año 2010</item>
+        <item>Examen año 2009</item>
+        <item>Examen año 2008</item>
+        <item>Examen año 2007</item>
+        <item>Examen año 2006</item>
+        <item>Examen año 2005</item>
+        <item>Examen año 2004</item>
+        <item>Examen año 2003</item>
+        <item>Examen año 2002</item>
+        <item>Examen año 2001</item>
+        <item>Examen año 2000</item>
+        <item>Examen año 1999</item>
+        <item>Examen año 1998</item>
+        <item>Examen año 1997</item>
+        <item>Examen año 1996</item>
+        <item>Examen año 1995</item>
+        <item>Examen año 1994</item>
+        <item>Examen año 1993</item>
+    </string-array>
 
     <string-array name="asignaturas">
+        <item>Asignatura al azar</item>
         <item>Anatomofisiología</item>
         <item>Bioética y legislación</item>
         <item>Bioquímica</item>
@@ -67,9 +124,10 @@
         <item>Proceso asistencial de enfermería</item>
         <item>Procedimientos y técnicas</item>
         <item>Salud pública y comunitaria</item>
+        <item>Microbiología</item>
     </string-array>
 
-    <string-array name="countries">
+    <!--string-array name="countries">
         <item>Pregunta 1</item>
         <item>Pregunta 2</item>
         <item>Pregunta 3</item>
@@ -90,9 +148,10 @@
         <item>Pregunta 18</item>
         <item>Pregunta 19</item>
         <item>Pregunta 20</item>
-    </string-array>
+    </string-array-->
 
     <string name="enunciado">Enunciado</string>
+    <string name="reportar">Reportar pregunta</string>
 
 </resources>
 

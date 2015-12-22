@@ -3,6 +3,55 @@
     <color name="ColorPrimary">#4A84B2</color>
     <color name="ColorPrimaryDark">#dc7d7d7d</color>
     <color name="color_accent">#FF4081</color>
+    <color name="fab_main">#4A84B2</color>
+
+    <color name="gridview_dark">#202020</color>
+    <color name="my_primary_light">#dcdcdc</color>
+    <color name="window_background">#CC000000</color>
+    <color name="my_primary">#009688</color>
+    <color name="my_primary_dark">#727272</color>
+    <color name="my_accent">#9E9E9E</color>
+    <color name="my_primary_text">#212121</color>
+    <color name="my_secondary_text">#727272</color>
+    <color name="my_icons">#FFFFFF</color>
+    <color name="my_divider">#B6B6B6</color>
+
+    <color name="actionbutton_reportar">#FFC300</color>
+
+    <color name="correcta">#82E563</color>
+    <color name="incorrecta">#FF815A</color>
+
+    <string-array name="colores">
+        <item>#B6B6B6</item>
+        <item>#388E3C</item>
+        <item>#9E9E9E</item>
+        <item>#2196F3</item>
+        <item>#F44336</item>
+        <item>#6D4C41</item>
+        <item>#E91E63</item>
+        <item>#0091EA</item>
+        <item>#3F51B5</item>
+        <item>#E65100</item>
+        <item>#4285F4</item>
+        <item>#0D0D0D</item>
+        <item>#006064</item>
+        <item>#8BC34A</item>
+        <item>#8D6E63</item>
+        <item>#FF5722</item>
+        <item>#757575</item>
+        <item>#4A148C</item>
+        <item>#006064</item>
+        <item>#D50000</item>
+        <item>#9C27B0</item>
+        <item>#827717</item>
+        <item>#00C853</item>
+        <item>#004D40</item>
+        <item>#FF6F00</item>
+        <item>#00ACC1</item>
+        <item>#546E7A</item>
+        <item>#4CAF50</item>
+        <item>#99CC00</item>
+    </string-array>
 
     <color name="color_1">#388E3C</color>
     <color name="color_2">#9E9E9E</color>
@@ -31,6 +80,8 @@
     <color name="color_25">#00ACC1</color>
     <color name="color_26">#546E7A</color>
     <color name="color_27">#4CAF50</color>
+    <color name="color_28">#99CC00</color>
+
 
     <color name="color_1b">#317C35</color>
     <color name="color_2b">#8C8C8C</color>
@@ -57,7 +108,9 @@
     <color name="color_23b">#00382F</color>
     <color name="color_24b">#E56400</color>
     <color name="color_25b">#0096A8</color>
-    <color name="color_26b" >#4B626D</color>
-    <color name="color_27b" >#45A049</color>
+    <color name="color_26b">#4B626D</color>
+    <color name="color_27b">#45A049</color>
+    <color name="color_28b">#669900</color>
+
 
 </resources>
